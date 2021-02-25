@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.5/dist/js/uikit-icons.min.js"></script>
+    <script src="./data/app.js"></script>
+    <link href="./fontawesome-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./data/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Denline@</title>
+</head>
+
+<body id="body-height-responsive-customers">
+    <!-- navbar -->
+    <div class="navbar-responsive-customers">
+        <div class="uk-flex uk-flex-middle uk-flex-between">
+            <div class="uk-flex uk-flex-middle">
+                <i class="fas fa-caret-left font-size-35"></i>
+                <img class="image-logo-store-responsive-customers" src="./data/logo2.png" alt="">
+            </div>
+            <div class="uk-flex uk-flex-middle">
+                <div>
+                    <button class="button-filter-responsive-customers" type="button" uk-toggle="target: .filter-responsive-active">
+                        <img class="image-filter-responsive-customers filter-responsive-active" src="./data/filtro-inactivo.png " alt=" " uk-img>
+                        <img class="image-filter-responsive-customers filter-responsive-active" src="./data/filtro-activo.png " alt=" " uk-img hidden>
+                    </button>
+                </div>
+                <div>
+                    <button class="button-user-responsive-customers" type="button" uk-toggle="target: .user-responsive-active">
+                        <img class="image-user-responsive-customers user-responsive-active" src="./data/usuario-inactivo.png" alt=" " uk-img>
+                        <img class="image-user-responsive-customers user-responsive-active" src="./data/usuario-activo.png " alt=" " uk-img hidden>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="uk-flex uk-flex-center padding-horizontal-30">
+            <input class="input-search-product-responsive-customers" type="text" placeholder="Busca tu producto">
+        </div>
+        <div class="uk-flex uk-flex-middle uk-flex-between padding-horizontal-30" style="padding-bottom: 15px;">
+            <div class="uk-flex uk-flex-middle">
+                <button class="button-categories-responsive-customers">Categorías</button>
+                <h6 class="uk-margin-remove font-size-11">LaFerra>Tienda</h6>
+            </div>
+            <div class="uk-flex uk-flex-middle">
+                <h6 class="uk-margin-remove">0$</h6>
+                <div class="hr-vertical"></div>
+                <a href="">
+                    <h6 class="uk-margin-remove">0</h6>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
