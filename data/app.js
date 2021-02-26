@@ -1,7 +1,18 @@
-function openMenu(type) {
-    let bodyHeight = document.getElementById('body-height')
+function openMenuResponsiveCustomers(type) {
+    let bodyHeight = document.getElementById('body-height-responsive-customers')
     let higthMax = bodyHeight.scrollHeight
     console.log(higthMax + "px !important")
+
+    if (type == 'categories-responsive-customers') {
+        document.getElementById("menu-categories-responsive-customers").setAttribute("style", `height: ${higthMax}px !important`);
+        document.getElementById("menu-categories-responsive-customers").classList.toggle("show");
+        document.getElementById("menu-subcategories-responsive-customers").classList.remove("show");
+    }
+    if (type == 'subcategories-responsive-customers') {
+        document.getElementById("menu-subcategories-responsive-customers").setAttribute("style", `height: ${higthMax}px !important`);
+        document.getElementById("menu-subcategories-responsive-customers").classList.toggle("show");
+        document.getElementById("menu-categories-responsive-customers").classList.remove("show");
+    }
 
     if (type == 'user') {
         document.getElementById("menu-users").setAttribute("style", `height: ${higthMax}px !important`);
@@ -22,14 +33,7 @@ function openMenu(type) {
         document.getElementById("menu-users").classList.remove("show");
         document.getElementById("menu-options").classList.remove("show");
     }
-    if (type == 'categories') {
-        document.getElementById("menu-categories").setAttribute("style", `height: ${higthMax}px !important`);
-        document.getElementById("menu-categories").classList.toggle("show");
-    }
-    if (type == 'subcategories') {
-        document.getElementById("menu-subcategories").setAttribute("style", `height: ${higthMax}px !important`);
-        document.getElementById("menu-subcategories").classList.toggle("show");
-    }
+
 }
 
 function repeatMenu() {
