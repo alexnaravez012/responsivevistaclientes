@@ -14,9 +14,9 @@ function openMenuResponsiveCustomers(type) {
         document.getElementById("menu-categories-responsive-customers").classList.remove("show");
     }
 
-    if (type == 'user') {
-        document.getElementById("menu-users").setAttribute("style", `height: ${higthMax}px !important`);
-        document.getElementById("menu-users").classList.toggle("show");
+    if (type == 'log-in-user-responsive-customers') {
+        document.getElementById("menu-log-in-responsive-customers").setAttribute("style", `height: ${higthMax}px !important`);
+        document.getElementById("menu-log-in-responsive-customers").classList.toggle("show");
         document.getElementById("menu-options").classList.remove("show");
         document.getElementById("menu-information").classList.remove("show");
 
