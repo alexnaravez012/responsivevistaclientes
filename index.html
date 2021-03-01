@@ -26,7 +26,7 @@
                     <img class="image-logo-store-responsive-customers" src="./data/logo2.png" alt="">
                 </div>
                 <div class="uk-flex uk-flex-middle" style="padding-right: 30px;">
-                    <div>
+                    <div style="margin-right: 5px;">
                         <button class="button-filter-responsive-customers" type="button" uk-toggle="target: .filter-responsive-active">
                         <img class="image-filter-responsive-customers filter-responsive-active" src="./data/filtro-inactivo.png " alt=" " uk-img>
                         <img class="image-filter-responsive-customers filter-responsive-active" src="./data/filtro-activo.png " alt=" " uk-img hidden>
@@ -40,99 +40,200 @@
                     </div>
                 </div>
             </div>
-            <div id="menu-log-in-responsive-customers" class="background-menus-responsive-customers">
-                <div class="style-menu-log-in-responsive-customers">
-                    <div class="uk-flex uk-flex-middle uk-flex-around">
-                        <button class="button-select-log-in-responsive-customers uk-width-1-2 uk-flex uk-flex-center uk-flex-middle" uk-toggle="target: .toggle">
+            <!-- Contenido para iniciar sesion y registrarse -->
+            <!-- <div style="display: none;">
+                <div id="menu-log-in-responsive-customers" class="background-menus-responsive-customers">
+                    <div class="style-menu-log-in-responsive-customers">
+                        <div class="uk-flex uk-flex-middle uk-flex-around">
+                            <button class="button-select-log-in-responsive-customers uk-width-1-2 uk-flex uk-flex-center uk-flex-middle" uk-toggle="target: .toggle">
                             <h4 class="uk-margin-remove uk-text-bold">Inicia Sesión</h4>
                         </button>
-                        <button class="button-select-record-responsive-customers uk-width-1-2 uk-flex uk-flex-center uk-flex-middle" uk-toggle="target: .toggle">
+                            <button class="button-select-record-responsive-customers uk-width-1-2 uk-flex uk-flex-center uk-flex-middle" uk-toggle="target: .toggle">
                                 <h4 class="uk-margin-remove uk-text-bold">Registrarse</h4>
                         </button>
-                    </div>
-                    <div class="toggle style-menu-record-responsive-customers" hidden>
-                        <div class="uk-flex uk-flex-center" style="margin-bottom:20px ;">
-                            <div>
-                                <div style="margin-top: 20px;">
-                                    <h5 class="uk-margin-remove uk-text-bold">Nombre</h5>
-                                    <input class="input-log-in-responsive-customers" type="text">
-                                </div>
-                                <div style="margin-top: 20px;">
-                                    <h5 class="uk-margin-remove uk-text-bold">Apellidos</h5>
-                                    <input class="input-log-in-responsive-customers" type="text">
-                                </div>
-                                <div style="margin-top: 20px;">
-                                    <h5 class="uk-margin-remove uk-text-bold">Correo electrónico</h5>
-                                    <input class="input-log-in-responsive-customers" type="text">
-                                </div>
-                                <div style="margin-top: 20px;">
-                                    <h5 class="uk-margin-remove uk-text-bold">Celular</h5>
-                                    <input class="input-log-in-responsive-customers" type="text">
-                                </div>
-                                <div style="margin-top: 20px;">
-                                    <h5 class="uk-margin-remove uk-text-bold">Contraseña</h5>
-                                    <div style="position: relative;">
-                                        <div>
-                                            <input class="input-log-in-responsive-customers" type="text">
-                                        </div>
-                                        <div uk-toggle="target: .view-password-active">
-                                            <i class="far fa-eye-slash view-password-active icon-view-password-responsive-customers"></i>
-                                            <i class="far fa-eye view-password-active icon-view-password-responsive-customers" hidden></i>
+                        </div>
+                        <div class="toggle style-menu-record-responsive-customers" hidden>
+                            <div class="uk-flex uk-flex-center" style="margin-bottom:20px ;">
+                                <div>
+                                    <div style="margin-top: 20px;">
+                                        <h5 class="uk-margin-remove uk-text-bold">Nombre</h5>
+                                        <input class="input-log-in-responsive-customers" type="text">
+                                    </div>
+                                    <div style="margin-top: 20px;">
+                                        <h5 class="uk-margin-remove uk-text-bold">Apellidos</h5>
+                                        <input class="input-log-in-responsive-customers" type="text">
+                                    </div>
+                                    <div style="margin-top: 20px;">
+                                        <h5 class="uk-margin-remove uk-text-bold">Correo electrónico</h5>
+                                        <input class="input-log-in-responsive-customers" type="text">
+                                    </div>
+                                    <div style="margin-top: 20px;">
+                                        <h5 class="uk-margin-remove uk-text-bold">Celular</h5>
+                                        <input class="input-log-in-responsive-customers" type="text">
+                                    </div>
+                                    <div style="margin-top: 20px;">
+                                        <h5 class="uk-margin-remove uk-text-bold">Contraseña</h5>
+                                        <div style="position: relative;">
+                                            <div>
+                                                <input class="input-log-in-responsive-customers" type="text">
+                                            </div>
+                                            <div uk-toggle="target: .view-password-active">
+                                                <i class="far fa-eye-slash view-password-active icon-view-password-responsive-customers"></i>
+                                                <i class="far fa-eye view-password-active icon-view-password-responsive-customers" hidden></i>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div style="margin-top: 20px;">
-                                    <h5 class="uk-margin-remove uk-text-bold">Confirmar Contraseña</h5>
-                                    <div style="position: relative;">
-                                        <div>
-                                            <input class="input-log-in-responsive-customers" type="text">
-                                        </div>
-                                        <div uk-toggle="target: .view-password-active">
-                                            <i class="far fa-eye-slash view-password-active icon-view-password-responsive-customers"></i>
-                                            <i class="far fa-eye view-password-active icon-view-password-responsive-customers" hidden></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <button class="button-log-in-user-responsive-customers">Regístrate</button>
-                        </div>
-                    </div>
-                    <div class="toggle">
-                        <div class="uk-flex uk-flex-center" style="margin-bottom:20px ;">
-                            <div>
-                                <div style="margin-top: 20px;">
-                                    <h5 class="uk-margin-remove uk-text-bold">Correo Electrónico</h5>
-                                    <input class="input-log-in-responsive-customers" type="text">
-                                </div>
-                                <div style="margin-top: 20px;">
-                                    <h5 class="uk-margin-remove uk-text-bold">Contraseña</h5>
-                                    <div style="position: relative;">
-                                        <div>
-                                            <input class="input-log-in-responsive-customers" type="text">
-                                        </div>
-                                        <div uk-toggle="target: .view-password-active">
-                                            <i class="far fa-eye-slash view-password-active icon-view-password-responsive-customers"></i>
-                                            <i class="far fa-eye view-password-active icon-view-password-responsive-customers" hidden></i>
+                                    <div style="margin-top: 20px;">
+                                        <h5 class="uk-margin-remove uk-text-bold">Confirmar Contraseña</h5>
+                                        <div style="position: relative;">
+                                            <div>
+                                                <input class="input-log-in-responsive-customers" type="text">
+                                            </div>
+                                            <div uk-toggle="target: .view-password-active">
+                                                <i class="far fa-eye-slash view-password-active icon-view-password-responsive-customers"></i>
+                                                <i class="far fa-eye view-password-active icon-view-password-responsive-customers" hidden></i>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div>
+                                <button onclick="openMenuResponsiveCustomers('button-register-address-responsive-customers')" class="button-log-in-user-responsive-customers">Regístrate</button>
+                            </div>
                         </div>
-                        <div class="padding-horizontal-30">
-                            <h6 class="uk-margin-remove uk-text-bold cursor-pointer">¿Olvidaste tu contraseña?</h6>
+                        <div class="toggle">
+                            <div class="uk-flex uk-flex-center" style="margin-bottom:20px ;">
+                                <div>
+                                    <div style="margin-top: 20px;">
+                                        <h5 class="uk-margin-remove uk-text-bold">Correo Electrónico</h5>
+                                        <input class="input-log-in-responsive-customers" type="text">
+                                    </div>
+                                    <div style="margin-top: 20px;">
+                                        <h5 class="uk-margin-remove uk-text-bold">Contraseña</h5>
+                                        <div style="position: relative;">
+                                            <div>
+                                                <input class="input-log-in-responsive-customers" type="text">
+                                            </div>
+                                            <div uk-toggle="target: .view-password-active">
+                                                <i class="far fa-eye-slash view-password-active icon-view-password-responsive-customers"></i>
+                                                <i class="far fa-eye view-password-active icon-view-password-responsive-customers" hidden></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="padding-horizontal-30">
+                                <h6 class="uk-margin-remove uk-text-bold cursor-pointer">¿Olvidaste tu contraseña?</h6>
+                            </div>
+                            <div>
+                                <button class="button-log-in-user-responsive-customers">Inicia Sesión</button>
+                            </div>
                         </div>
-                        <div>
-                            <button class="button-log-in-user-responsive-customers">Inicia Sesión</button>
+                    </div>
+                </div>
+                <div id="menu-register-address-responsive-customers" class="background-menus-responsive-customers">
+                    <div class="uk-flex uk-flex-center style-menu-register-address-responsive-customers" style="margin-bottom:20px ;">
+                        <div style="margin-top: 20px;">
+                            <div class="uk-flex uk-flex-middle">
+                                <i class="fas fa-caret-left font-size-25" style="padding-right: 20px;"></i>
+                                <h4 class="uk-margin-remove uk-text-bold">Dirección</h4>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove font-weight-600" style="padding-top: 15px;">Escribela y da click en “Localizar”</h5>
+                            </div>
+                            <div class="uk-flex uk-flex-middle uk-flex-between buttons-input-register-address-responsive-customers padding-horizontal-20" style="margin-top: 40px;">
+                                <h5 class="uk-margin-remove">Selecciona tu ciudad</h5>
+                                <i class="fas fa-caret-down font-size-25"></i>
+                            </div>
+                            <div class="uk-flex uk-flex-middle" style="margin-top: 20px;">
+                                <div class="uk-flex uk-flex-middle uk-flex-between buttons-input-register-address-responsive-customers padding-horizontal-20" style="width: 110px; margin-right: 20px;">
+                                    <h5 class="uk-margin-remove">Carrera</h5>
+                                    <i class="fas fa-caret-down font-size-25"></i>
+                                </div>
+                                <input class="input-register-address-responsive-customers uk-text-center" type="text" placeholder="16A SUR">
+                            </div>
+                            <div class="uk-flex uk-flex-middle" style="margin-top: 20px;">
+                                <input class="input-register-address-responsive-customers uk-text-center" style="width: 145px; margin-right: 20px;" type="text" placeholder="2C">
+                                <input class="input-register-address-responsive-customers uk-text-center" type="text" placeholder="32">
+                            </div>
+                            <div style="margin-top: 20px;">
+                                <input class="input-register-address-responsive-customers uk-text-center" style="width: 355px;" type="text" placeholder="Información Adicional">
+                            </div>
+                            <div style="margin-top: 30px;">
+                                <h4 class="uk-margin-remove uk-text-bold">Ubicación geográfica</h4>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16289433.401729723!2d-83.39814111764282!3d4.609691158847656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e15a43aae1594a3%3A0x9a0d9a04eff2a340!2sColombia!5e0!3m2!1ses!2sco!4v1614611543001!5m2!1ses!2sco"
+                                    width="360" height="150" style="border:0; margin-top: 15px; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+                                <div class="uk-flex uk-flex-center" style="margin-top: 20px;">
+                                    <div class="uk-flex uk-flex-column">
+                                        <button class="buttons-address-responsive-customers" style="background-color: black; color: white;">Localizar</button>
+                                        <button class="buttons-address-responsive-customers">Siguiente</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div style="display: inline;">
+                <div id="menu-log-in-responsive-customers" class="background-menus-responsive-customers">
+                    <div class="uk-flex uk-flex-center menu-my-orders-responsive-customers">
+                        <div class="my-orders">
+                            <h4 class="uk-margin-remove uk-text-bold color-blue" uk-toggle="target: .my-orders">Mis pedidos</h4>
+                            <h4 class="uk-margin-remove" style="padding-top: 15px;">Cerrar Sesión</h4>
+                        </div>
+                        <div class="my-orders" hidden>
+                            <div>
+                                <h4 class="uk-margin-remove uk-text-bold color-blue" uk-toggle="target: .my-orders">alx</h4>
+                                <h4 class="uk-margin-remove" style="padding-top: 15px;">narv</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu-register-address-responsive-customers" class="background-menus-responsive-customers">
+                    <div class="uk-flex uk-flex-center style-menu-register-address-responsive-customers" style="margin-bottom:20px ;">
+                        <div style="margin-top: 20px;">
+                            <div class="uk-flex uk-flex-middle">
+                                <i class="fas fa-caret-left font-size-25" style="padding-right: 20px;"></i>
+                                <h4 class="uk-margin-remove uk-text-bold">Dirección</h4>
+                            </div>
+                            <div>
+                                <h5 class="uk-margin-remove font-weight-600" style="padding-top: 15px;">Escribela y da click en “Localizar”</h5>
+                            </div>
+                            <div class="uk-flex uk-flex-middle uk-flex-between buttons-input-register-address-responsive-customers padding-horizontal-20" style="margin-top: 40px;">
+                                <h5 class="uk-margin-remove">Selecciona tu ciudad</h5>
+                                <i class="fas fa-caret-down font-size-25"></i>
+                            </div>
+                            <div class="uk-flex uk-flex-middle" style="margin-top: 20px;">
+                                <div class="uk-flex uk-flex-middle uk-flex-between buttons-input-register-address-responsive-customers padding-horizontal-20" style="width: 110px; margin-right: 20px;">
+                                    <h5 class="uk-margin-remove">Carrera</h5>
+                                    <i class="fas fa-caret-down font-size-25"></i>
+                                </div>
+                                <input class="input-register-address-responsive-customers uk-text-center" type="text" placeholder="16A SUR">
+                            </div>
+                            <div class="uk-flex uk-flex-middle" style="margin-top: 20px;">
+                                <input class="input-register-address-responsive-customers uk-text-center" style="width: 145px; margin-right: 20px;" type="text" placeholder="2C">
+                                <input class="input-register-address-responsive-customers uk-text-center" type="text" placeholder="32">
+                            </div>
+                            <div style="margin-top: 20px;">
+                                <input class="input-register-address-responsive-customers uk-text-center" style="width: 355px;" type="text" placeholder="Información Adicional">
+                            </div>
+                            <div style="margin-top: 30px;">
+                                <h4 class="uk-margin-remove uk-text-bold">Ubicación geográfica</h4>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16289433.401729723!2d-83.39814111764282!3d4.609691158847656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e15a43aae1594a3%3A0x9a0d9a04eff2a340!2sColombia!5e0!3m2!1ses!2sco!4v1614611543001!5m2!1ses!2sco"
+                                    width="360" height="150" style="border:0; margin-top: 15px; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+                                <div class="uk-flex uk-flex-center" style="margin-top: 20px;">
+                                    <div class="uk-flex uk-flex-column">
+                                        <button class="buttons-address-responsive-customers" style="background-color: black; color: white;">Localizar</button>
+                                        <button class="buttons-address-responsive-customers">Siguiente</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="uk-flex uk-flex-center padding-horizontal-30">
-                <input class="input-search-product-responsive-customers" type="text" placeholder="Busca tu producto">
-            </div>
         </div>
+        <!-- subnavbars  -->
         <div class="uk-flex uk-flex-middle">
             <div class="uk-width-1-2">
                 <div class="button-select-search-option-responsive-customers uk-box-shadow-hover-large uk-flex uk-flex-middle">
@@ -213,6 +314,7 @@
                 </ul>
             </div>
         </div>
+        <!-- contenido de agregar producto -->
         <div style="padding: 20px;">
             <h6 class="uk-margin-remove uk-text-muted">Zapatos > Mocacines > Mocacines Formales</h6>
             <h3 class="uk-text-bold uk-margin-remove" style="padding-top: 5px;">Mocacines</h3>
@@ -231,7 +333,7 @@
                     </div>
                 </div>
                 <div class="uk-width-1-3 uk-width-1-3 uk-flex uk-flex-middle ">
-                    <button class="uk-text-capitalize uk-text-bold uk-button uk-button-default buttom-add-responsive-customers uk-box-shadow-large ">Agregar</button>
+                    <button class="uk-text-capitalize uk-text-bold uk-button uk-button-default button-add-responsive-customers uk-box-shadow-large ">Agregar</button>
                 </div>
             </div>
             <div class="uk-flex " style="margin-top: 5px; ">
@@ -299,7 +401,16 @@
     <!-- Vista especializada de producto -->
     <div style="display: none;">
         <!--Navbar gallery-->
-        <div class="uk-flex uk-flex-between uk-flex-middle uk-box-shadow-medium">
+        <div class="uk-flex uk-flex-middle uk-flex-between padding-horizontal-10" style="margin-top: 15px;">
+            <div>
+                <img class="icons-view-gallery-top-responsive-customers" src="./data/icono-x.png" alt="">
+            </div>
+            <div class="uk-flex uk-flex-middle">
+                <img class="icons-view-gallery-top-responsive-customers" src="./data/icono-compartir.png" style="margin-right: 5px;" alt="">
+                <img class="icons-view-gallery-top-responsive-customers" src="./data/icono-corazon.png" alt="">
+            </div>
+        </div>
+        <div class="uk-flex uk-flex-between uk-flex-middle uk-box-shadow-medium" style="margin-top: 25px;">
             <div>
                 <img class="image-logo-store-responsive-customers" src="./data/logo2.png" alt="">
             </div>

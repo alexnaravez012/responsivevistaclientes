@@ -17,8 +17,15 @@ function openMenuResponsiveCustomers(type) {
     if (type == 'log-in-user-responsive-customers') {
         document.getElementById("menu-log-in-responsive-customers").setAttribute("style", `height: ${higthMax}px !important`);
         document.getElementById("menu-log-in-responsive-customers").classList.toggle("show");
-        document.getElementById("menu-options").classList.remove("show");
-        document.getElementById("menu-information").classList.remove("show");
+        document.getElementById("menu-register-address-responsive-customers").classList.remove("show");
+
+    }
+
+    if (type == 'button-register-address-responsive-customers') {
+        document.getElementById("menu-register-address-responsive-customers").setAttribute("style", `height: ${higthMax}px !important`);
+        document.getElementById("menu-register-address-responsive-customers").classList.toggle("show");
+        document.getElementById("menu-log-in-responsive-customers").classList.toggle("show");
+
 
     }
     if (type == 'options') {
