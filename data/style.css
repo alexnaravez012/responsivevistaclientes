@@ -22,7 +22,11 @@
 
 .navbar-responsive-customers {
     background-color: white;
-    box-shadow: 0px 10px 5px -6px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 10px 5px -6px rgba(0, 0, 0, 0.35);
+    z-index: 20 !important;
+    position: fixed;
+    width: 100%;
+    height: 150px;
 }
 
 .image-logo-store-responsive-customers {
@@ -31,7 +35,7 @@
     margin-left: 20px;
 }
 
-.button-filter-responsive-customers {
+.button-navbar-filter-responsive-customers {
     width: 45px;
     height: 45px;
     padding: 0px !important;
@@ -39,7 +43,7 @@
     background-color: white;
 }
 
-.button-filter-responsive-customers:focus {
+.button-navbar-filter-responsive-customers:focus {
     outline: 0;
 }
 
@@ -93,7 +97,7 @@
 .button-bag-complete-order-responsive-customers {
     background-color: #FBF38C;
     height: 45px;
-    width: 90px;
+    width: 100px;
     padding-left: 5px;
     border-radius: 5px;
     cursor: pointer;
@@ -105,8 +109,8 @@
 }
 
 .text-bag-complete-order-responsive-customers {
-    right: 62px;
-    top: 36px;
+    right: 54px;
+    top: 34px;
     font-weight: 700;
     position: absolute;
     font-size: 12px;
@@ -115,6 +119,25 @@
 .button-select-search-option-responsive-customers {
     width: 200px;
     height: 80px;
+    background-color: white;
+    border: none;
+}
+
+.button-select-search-option-responsive-customers:focus {
+    outline: 0;
+    box-shadow: inset -5px 5px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+.button-select-search-option-cat-responsive-customers {
+    width: 200px;
+    height: 80px;
+    background-color: white;
+    border: none;
+}
+
+.button-select-search-option-cat-responsive-customers:focus {
+    outline: 0;
+    box-shadow: inset 5px 6px 5px 0px rgba(0, 0, 0, 0.15);
 }
 
 .color-blue {
@@ -132,7 +155,7 @@
 }
 
 .button-search-cat-responsive-customers {
-    border-radius: 20px;
+    border-radius: 20px !important;
     border: 1px black solid;
     font-size: 16px;
     width: 200px;
@@ -453,10 +476,127 @@
 
 .menu-my-orders-responsive-customers {
     background-color: white;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 10px;
-    padding-top: 20px;
     padding-bottom: 0px;
-    height: 100px;
+    height: 130px;
+}
+
+.navbar-menu-orders-responsive-customers {
+    box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.10);
+    width: 100%;
+}
+
+.menu-my-orders-active-responsive-customers {
+    background-color: white;
+    padding-bottom: 0px;
+    height: 600px;
+    width: 100%;
+}
+
+.buttons-menu-orders-responsive-customers {
+    border: none;
+    background-color: white;
+    padding-bottom: 10px;
+    font-size: 18px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.buttons-menu-orders-responsive-customers:focus {
+    outline: 0;
+    border-bottom: 3px solid #7AC0E5;
+}
+
+.card-menu-orders-responsive-customers {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 15px;
+    width: 300px;
+    height: 120px;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
+
+.font-size-13 {
+    font-size: 13px;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+
+.menu-filter-responsive-customers {
+    padding: 40px;
+    padding-top: 30px !important;
+    overflow: scroll;
+}
+
+.font-size-8 {
+    font-size: 8px;
+}
+
+.button-filter-responsive-customers {
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+}
+
+.button-filter-responsive-customers:focus {
+    outline: 0;
+}
+
+.button-filter-responsive-customers:active {
+    background-color: #3a6193;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.color-grey-dollar {
+    color: rgb(146, 145, 145);
+}
+
+.width-200 {
+    width: 200px;
+}
+
+.buttons-categories-filter-responsive-customers {
+    background-color: white;
+    height: 35px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-weight: 600;
+    color: grey;
+    border: none;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.buttons-categories-filter-responsive-customers:focus {
+    border: 1px solid rgb(116, 116, 116);
+    border-radius: 5px;
+    outline: 0;
+}
+
+.button-apply-filter-responsive-customers {
+    color: white;
+    border-radius: 10px;
+    border: none;
+    background-color: #45B771;
+    width: 150px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-top: 55px;
 }

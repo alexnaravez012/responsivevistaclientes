@@ -20,25 +20,11 @@ function openMenuResponsiveCustomers(type) {
         document.getElementById("menu-register-address-responsive-customers").classList.remove("show");
 
     }
+    if (type == 'orders-responsive-customers') {
+        document.getElementById("menu-orders-responsive-customers").setAttribute("style", `height: ${higthMax}px !important`);
+        document.getElementById("menu-orders-responsive-customers").classList.toggle("show");
+        document.getElementById("menu-register-address-responsive-customers").classList.remove("show");
 
-    if (type == 'button-register-address-responsive-customers') {
-        document.getElementById("menu-register-address-responsive-customers").setAttribute("style", `height: ${higthMax}px !important`);
-        document.getElementById("menu-register-address-responsive-customers").classList.toggle("show");
-        document.getElementById("menu-log-in-responsive-customers").classList.toggle("show");
-
-
-    }
-    if (type == 'options') {
-        document.getElementById("menu-options").setAttribute("style", `height: ${higthMax}px !important`);
-        document.getElementById("menu-users").classList.remove("show");
-        document.getElementById("menu-options").classList.toggle("show");
-        document.getElementById("menu-information").classList.remove("show");
-    }
-    if (type == 'information') {
-        document.getElementById("menu-information").setAttribute("style", `height: ${higthMax}px !important`);
-        document.getElementById("menu-information").classList.toggle("show");
-        document.getElementById("menu-users").classList.remove("show");
-        document.getElementById("menu-options").classList.remove("show");
     }
 
 }
