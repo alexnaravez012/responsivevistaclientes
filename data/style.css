@@ -156,7 +156,7 @@
 
 .button-search-cat-responsive-customers {
     border-radius: 20px !important;
-    border: 1px black solid;
+    border: 1px solid rgb(114, 114, 114) !important;
     font-size: 16px;
     width: 200px;
     height: 40px;
@@ -599,4 +599,127 @@
     margin-top: 5px;
     cursor: pointer;
     margin-top: 55px;
+}
+
+.icon-close-basket-responsive-customers {
+    background-color: #FBF38C;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: black;
+    margin-top: 3px;
+}
+
+.img-items-products-basket-responsive-customers {
+    min-width: 160px;
+    max-width: 160px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-position: 50%;
+    background-size: 100% auto;
+}
+
+.box-discount-basket-responsive-customers {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    bottom: 120px;
+    left: 5px;
+    height: 20px;
+    width: 60px;
+    font-size: 14px;
+}
+
+.icon-plus-minus-basket-responsive-customers {
+    background-color: #0e700e;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: white;
+}
+
+.like-size-basket-responsive-customers {
+    top: 90px;
+    left: 108px;
+    height: 70px;
+    width: 70px;
+}
+
+.button-complete-basket-responsive-customers {
+    border: none;
+    width: 250px;
+    height: 50px;
+    background-color: #FBF38C;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.image-items-complete-order-responsive-customers {
+    min-width: 130px;
+    max-width: 130px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-position: 50%;
+    background-size: 100% auto;
+}
+
+.box-discount-complete-order-responsive-customers {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    bottom: 85px;
+    right: 85px;
+    height: 20px;
+    width: 50px;
+    font-size: 14px;
+}
+
+.like-size-complete-order-responsive-customers {
+    top: 105px;
+    left: 90px;
+    height: 60px;
+    width: 60px;
+}
+
+.icono-cash-responsive-customers {
+    height: 45px;
+    width: 65px;
+}
+
+.button-make-to-order-responsive-customers {
+    border: none;
+    background-color: #FBF38C;
+    height: 45px;
+    width: 280px;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.padding-vertical-5 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.width-100 {
+    width: 100px;
+}
+
+.button-change-complete-order-respomsive-customers {
+    height: 40px;
+    border: 1px solid black;
+    background-color: white;
+    color: #3AB048;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.font-size-15 {
+    font-size: 15px;
 }
