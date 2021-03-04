@@ -723,3 +723,38 @@
 .font-size-15 {
     font-size: 15px;
 }
+
+.icons-select-cards-payment-method-responsive-customers {
+    height: 55px;
+    width: 75px;
+}
+
+.icons-cards-payment-method-responsive-customers {
+    height: 70px;
+    width: 70px;
+}
+
+.padding-40 {
+    padding: 40px;
+}
+
+.padding-20 {
+    padding: 20px;
+}
+
+.padding-vertical-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.input-add-card-responsive-customers {
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 140px;
+    padding-left: 10px;
+}
+
+.input-add-card-responsive-customers::-webkit-input-placeholder {
+    color: rgb(156, 156, 156);
+}

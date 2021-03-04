@@ -1009,7 +1009,7 @@
         </div>
     </div>
     <!-- Vista del proceso de compra -->
-    <div style="display: inline;">
+    <div style="display: none;">
         <div style="padding: 40px;">
             <div class="uk-flex uk-flex-middle">
                 <i class="fas fa-caret-left font-size-35" style="margin-right: 40px;"></i>
@@ -1100,6 +1100,87 @@
                 </div>
             </div>
         </div>
+    </div>
+    <!-- Vista del boton de metodos de pago -->
+    <div style="display: none;">
+        <div>
+            <div class="uk-flex uk-flex-middle" style="padding-top: 40px; margin-left: 40px;">
+                <i class="fas fa-caret-left font-size-35" style="margin-right: 40px;"></i>
+                <h2 class="uk-margin-remove uk-text-bold">Métodos de pago</h2>
+            </div>
+            <div class="uk-flex uk-flex-middle padding-horizontal-40 padding-vertical-20">
+                <img class="icons-select-cards-payment-method-responsive-customers" src="./data/dinero-recurso.png" alt="">
+                <h4 class="uk-margin-remove uk-text-bold padding-horizontal-20">Efectivo</h4>
+            </div>
+            <div class="uk-flex uk-flex-middle padding-horizontal-40" style="padding-bottom: 30px;" uk-toggle="target: #toggle-usage">
+                <img class="icons-select-cards-payment-method-responsive-customers" src="./data/tarjetas-recursoo.png" alt="">
+                <h4 class="uk-margin-remove uk-text-bold padding-horizontal-20">Tarjeta</h4>
+            </div>
+            <div id="toggle-usage" hidden>
+                <div class="hr-tab"></div>
+                <div class="uk-flex uk-flex-middle padding-40">
+                    <img class="icons-cards-payment-method-responsive-customers" src="./data/american-express.png" alt="">
+                    <h4 class="uk-margin-remove uk-text-bold padding-horizontal-20">Amex</h4>
+                </div>
+                <div class="hr-tab"></div>
+                <div class="uk-flex uk-flex-middle padding-40">
+                    <img class="icons-cards-payment-method-responsive-customers" src="./data/master-card.png" alt="">
+                    <h4 class="uk-margin-remove uk-text-bold padding-horizontal-20">Mastercard</h4>
+                </div>
+                <div class="hr-tab"></div>
+                <div class="uk-flex uk-flex-middle padding-40">
+                    <img class="icons-select-cards-payment-method-responsive-customers" src="./data/visa.png" alt="">
+                    <h4 class="uk-margin-remove uk-text-bold padding-horizontal-20">Visa</h4>
+                </div>
+                <div class="hr-tab"></div>
+                <div class="uk-flex uk-flex-middle padding-40">
+                    <img class="icons-cards-payment-method-responsive-customers" src="./data/Dinners-club.png" alt="">
+                    <h4 class="uk-margin-remove uk-text-bold padding-horizontal-20">Dinners Club</h4>
+                </div>
+                <div class="hr-tab" style="margin-bottom: 20px;"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Vista del boton de tarjeta -->
+    <div style="display: none;">
+        <div style="padding: 40px;">
+            <div class="uk-flex uk-flex-middle">
+                <i class="fas fa-caret-left font-size-35" style="margin-right: 40px;"></i>
+                <h2 class="uk-margin-remove uk-text-bold">Agregar tarjeta</h2>
+            </div>
+            <div class="uk-flex uk-flex-middle" style="margin-top: 40px;">
+                <div>
+                    <h5 class="uk-margin-remove uk-text-bold padding-vertical-10">Número de tarjeta</h5>
+                    <input class="input-add-card-responsive-customers" style="width: 200px;" type="text" placeholder="XXXX XXXX XXXX XXXX">
+                </div>
+                <img class="icons-select-cards-payment-method-responsive-customers" src="./data/tarjetas-recursoo.png" alt="">
+            </div>
+            <div style="margin-top: 30px;">
+                <h5 class="uk-margin-remove uk-text-bold padding-vertical-10">Titular</h5>
+                <div class="uk-flex uk-flex-middle uk-flex-between">
+                    <div>
+                        <h6 class="uk-margin-remove padding-vertical-5">Nombre</h6>
+                        <input class="input-add-card-responsive-customers " type="text">
+                    </div>
+                    <div>
+                        <h6 class="uk-margin-remove padding-vertical-5">Apellido</h6>
+                        <input class="input-add-card-responsive-customers " type="text">
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 30px;">
+                <h5 class="uk-margin-remove uk-text-bold padding-vertical-10">Fecha de expiración</h5>
+                <input class="input-add-card-responsive-customers " type="text" placeholder="XX/XX">
+            </div>
+            <div style="margin-top: 30px;">
+                <h5 class="uk-margin-remove uk-text-bold padding-vertical-10">CVC</h5>
+                <input class="input-add-card-responsive-customers " type="text" placeholder="XXX">
+            </div>
+            <button class="button-change-complete-order-respomsive-customers" style="width: 100px; margin-top: 30px;">Ingresar</button>
+        </div>
+    </div>
+    <div style="display: inline;">
+
     </div>
 </body>
 
