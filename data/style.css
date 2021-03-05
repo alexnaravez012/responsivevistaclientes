@@ -810,3 +810,70 @@
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
+.margin-vertical-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.input-enter-coupon-checkout-responsive-customers {
+    width: 230px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 17px;
+    padding-left: 10px;
+}
+
+.input-enter-coupon-checkout-responsive-customers::-webkit-input-placeholder {
+    color: rgb(158, 158, 158);
+}
+
+.input-enter-coupon-checkout-responsive-customers:focus {
+    outline: 0;
+}
+
+.button-enter-coupon-checkout-responsive-customers {
+    width: 110px;
+    height: 42px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 16px;
+    color: #3DAE49;
+    font-weight: 600 !important;
+    cursor: pointer;
+}
+
+.button-enter-coupon-checkout-responsive-customers:focus {
+    outline: 0;
+}
+
+.buttons-select-type-coupon-responsive-customers {
+    background-color: white;
+    border: none;
+    width: 160px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.buttons-select-type-coupon-responsive-customers:focus {
+    outline: 0;
+    border-bottom: 2px solid black;
+}
+
+.image-coupon-responsive-customers {
+    width: 30px;
+    height: 30px;
+}
+
+.width-60 {
+    width: 60px;
+}
+
+.train-status-responsive-customers {
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
