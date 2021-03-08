@@ -22,11 +22,16 @@
 
 .navbar-responsive-customers {
     background-color: white;
-    box-shadow: 0px 10px 5px -6px rgba(0, 0, 0, 0.35);
-    z-index: 20 !important;
-    position: fixed;
+    box-shadow: 0px 10px 5px -6px rgba(160, 160, 160, 0.24);
     width: 100%;
-    height: 150px;
+    position: fixed;
+    z-index: 10;
+}
+
+.navbar-view-main-responsive-customers {
+    background-color: white;
+    width: 100%;
+    height: 130px;
 }
 
 .image-logo-store-responsive-customers {
@@ -63,9 +68,8 @@
     width: 350px;
     height: 35px;
     box-shadow: 0px 10px 5px -6px rgba(0, 0, 0, 0.25);
-    border: 1px solid rgb(83, 83, 83);
+    border: 1px solid rgb(156, 156, 156);
     border-bottom: none;
-    margin-bottom: 20px;
     padding-left: 10px;
 }
 
@@ -116,6 +120,14 @@
     font-size: 12px;
 }
 
+.text-bag-complete-order-main-responsive-customers {
+    right: 57px;
+    top: 34px;
+    font-weight: 700;
+    position: absolute;
+    font-size: 12px;
+}
+
 .button-select-search-option-responsive-customers {
     width: 200px;
     height: 80px;
@@ -156,7 +168,7 @@
 
 .button-search-cat-responsive-customers {
     border-radius: 20px !important;
-    border: 1px solid rgb(114, 114, 114) !important;
+    border: 1px solid rgb(153, 153, 153) !important;
     font-size: 16px;
     width: 200px;
     height: 40px;
@@ -184,7 +196,7 @@
 }
 
 .hr-tab {
-    border-bottom: 1px solid rgb(54, 54, 54);
+    border-bottom: 1px solid rgb(134, 134, 134);
 }
 
 .padding-vertical-10 {
@@ -197,6 +209,7 @@
     margin: 20px;
     overflow-x: scroll;
     padding-bottom: 10px;
+    margin-top: 5px !important;
 }
 
 .scrollhorizontal-responsive-customers::-webkit-scrollbar {
@@ -308,12 +321,12 @@
     border-radius: 5px;
     background-position: 50%;
     background-size: 100% auto;
-    border: 1px solid black;
+    border: 1px solid rgb(144, 144, 144);
     margin: 5px;
 }
 
 .button-galery-options-responsive-customers {
-    border: 1px solid black;
+    border: 1px solid rgb(136, 136, 136);
     border-radius: 5px;
     height: 25px;
     width: 55px;
@@ -355,7 +368,7 @@
 
 .text-bag-gallery-order-responsive-customers {
     right: 55px;
-    top: 120px;
+    top: 35px;
     font-weight: 700;
     position: absolute;
     font-size: 12px;
@@ -364,15 +377,20 @@
 .style-menu-log-in-responsive-customers {
     background-color: white;
     padding-top: 0px;
-    height: 420px;
+    height: 440px;
 }
 
 .input-log-in-responsive-customers {
-    width: 340px;
+    width: 330px;
     height: 50px;
-    border: 1px solid black;
+    border: 1px solid rgb(161, 161, 161);
     border-radius: 5px;
     margin-top: 10px;
+    padding-left: 10px;
+}
+
+.input-log-in-responsive-customers:focus {
+    outline: 0;
 }
 
 .icon-view-password-responsive-customers {
@@ -380,6 +398,7 @@
     top: 25px;
     right: 15px;
     font-size: 22px;
+    color: rgb(160, 160, 160);
 }
 
 .padding-horizontal-25 {
@@ -399,9 +418,10 @@
 }
 
 .button-select-log-in-responsive-customers {
-    height: 50px;
+    height: 60px;
     background-color: white;
     border: none;
+    z-index: 5;
 }
 
 .button-select-log-in-responsive-customers:focus {
@@ -410,9 +430,10 @@
 }
 
 .button-select-record-responsive-customers {
-    height: 50px;
+    height: 60px;
     background-color: white;
     border: none;
+    z-index: 5;
 }
 
 .button-select-record-responsive-customers:focus {
@@ -426,12 +447,6 @@
     height: 800px;
 }
 
-.style-menu-register-address-responsive-customers {
-    background-color: white;
-    padding-top: 0px;
-    height: 840px;
-}
-
 .font-size-25 {
     font-size: 25px;
 }
@@ -439,15 +454,20 @@
 .input-register-address-responsive-customers {
     width: 183px;
     height: 50px;
-    border: 1px solid black;
+    border: 1px solid rgb(153, 153, 153);
     border-radius: 5px;
+}
+
+.input-register-address-responsive-customers:focus {
+    outline: 0;
 }
 
 .buttons-input-register-address-responsive-customers {
     width: 320px;
     height: 50px;
-    border: 1px solid black;
+    border: 1px solid rgb(153, 153, 153);
     border-radius: 5px;
+    color: grey;
 }
 
 .padding-horizontal-10 {
@@ -611,10 +631,10 @@
 }
 
 .img-items-products-basket-responsive-customers {
-    min-width: 160px;
-    max-width: 160px;
-    width: 160px;
-    height: 160px;
+    min-width: 140px;
+    max-width: 140px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     background-position: 50%;
     background-size: 100% auto;
@@ -624,7 +644,7 @@
     background-color: black;
     color: white;
     border-radius: 20px;
-    bottom: 120px;
+    bottom: 110px;
     left: 5px;
     height: 20px;
     width: 60px;
@@ -642,7 +662,7 @@
 
 .like-size-basket-responsive-customers {
     top: 90px;
-    left: 108px;
+    left: 90px;
     height: 70px;
     width: 70px;
 }
@@ -664,6 +684,7 @@
     border-radius: 50%;
     background-position: 50%;
     background-size: 100% auto;
+    margin-right: 15px;
 }
 
 .box-discount-complete-order-responsive-customers {
@@ -696,7 +717,7 @@
     width: 280px;
     font-size: 17px;
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 .padding-vertical-5 {
@@ -748,15 +769,23 @@
 }
 
 .input-add-card-responsive-customers {
-    height: 35px;
+    width: 330px;
+    height: 50px;
+    border: 1px solid rgb(161, 161, 161);
     border-radius: 5px;
-    border: 1px solid black;
-    width: 140px;
     padding-left: 10px;
 }
 
 .input-add-card-responsive-customers::-webkit-input-placeholder {
     color: rgb(156, 156, 156);
+}
+
+.box-input-add-card-responsive-customers {
+    width: 250px !important;
+    height: 50px;
+    border: 1px solid rgb(161, 161, 161);
+    border-radius: 5px;
+    margin-right: 15px;
 }
 
 .width-250 {
@@ -768,12 +797,12 @@
     width: 320px;
     margin-left: 20px;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid rgb(153, 153, 153);
     padding-left: 10px;
 }
 
 .button-current-location-responsive-customers {
-    border: 2px solid #3AB048;
+    border: 2px solid #3ab04869;
     height: 45px;
     width: 350px;
     border-radius: 5px;
@@ -803,7 +832,7 @@
 }
 
 .color-grey {
-    color: rgb(109, 109, 109);
+    color: rgb(139, 139, 139);
 }
 
 .padding-vertical-30 {
@@ -873,7 +902,72 @@
 }
 
 .train-status-responsive-customers {
-    width: 350px;
     margin-top: 20px;
     margin-bottom: 10px;
+    width: 390px;
+}
+
+.padding-vertical-15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.radio-item {
+    display: inline-block;
+    position: relative;
+}
+
+.radio-item input[type='radio'] {
+    display: none;
+}
+
+.radio-item label:before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid rgb(124, 124, 124);
+    background-color: rgb(236, 235, 235);
+    cursor: pointer;
+}
+
+.radio-item input[type=radio]:checked+label:after {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: calc(50% - 5px)!important;
+    left: calc(50% - 5px)!important;
+    content: "";
+    background: black;
+}
+
+.radio-item input[type=radio]:checked+label:before {
+    background: #FFF284;
+}
+
+.font-size-17 {
+    font-size: 17px;
+}
+
+.button-save-card-responsive-customers {
+    width: 150px;
+    height: 52px;
+    border-radius: 5px;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 45px;
+    background-color: #FBF38C;
+}
+
+.button-save-card-responsive-customers:focus {
+    outline: 0;
+}
+
+.padding-horizontal-15 {
+    padding-left: 15px;
+    padding-right: 15px;
 }

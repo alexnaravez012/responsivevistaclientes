@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./fontawesome-web/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.9/dist/css/uikit.min.css" />
+    <script src="./data/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.9/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.9/dist/js/uikit-icons.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -18,9 +19,9 @@
 
 <body id="body-height-responsive-customers">
     <!-- Vista principal de tienda con busqueda por categorias y demas -->
-    <div style="display: inline;">
+    <div style="display: none;">
         <!-- navbar -->
-        <div class="navbar-responsive-customers">
+        <div class="navbar-view-main-responsive-customers">
             <div class="uk-flex uk-flex-middle uk-flex-between">
                 <div class="uk-flex uk-flex-middle cursor-pointer" style="padding-left: 20px;" href="#">
                     <i class="fas fa-caret-left font-size-35"></i>
@@ -49,10 +50,6 @@
                     </div> -->
                 </div>
             </div>
-            <div class="uk-flex uk-flex-center">
-                <input class="input-search-product-responsive-customers" type="text" placeholder="Busca tu producto">
-            </div>
-            <!-- Contenido inicio de sesion de usuario -->
             <div id="menu-log-in-responsive-customers" class="background-menus-responsive-customers">
                 <div class="style-menu-log-in-responsive-customers">
                     <div class="uk-flex uk-flex-middle uk-flex-around">
@@ -190,18 +187,10 @@
                     </div>
                 </div>
             </div> -->
-        </div>
-        <div class="uk-flex uk-flex-middle" style="padding-top: 151px;">
-            <div class="uk-width-1-2">
-                <button class="button-select-search-option-responsive-customers uk-flex uk-flex-middle">
-                    <h4 class="uk-text-center uk-text-bold color-blue uk-margin-remove padding-horizontal-40">Productos por lista</h4>
-                </button>
+            <div class="uk-flex uk-flex-center">
+                <input class="input-search-product-responsive-customers" type="text" placeholder="Busca tu producto">
             </div>
-            <div class="uk-width-1-2">
-                <button class="button-select-search-option-cat-responsive-customers uk-flex uk-flex-middle">
-                    <h4 class="uk-text-center uk-text-bold color-blue uk-margin-remove">Productos por categorias</h4>
-                </button>
-            </div>
+            <!-- Contenido inicio de sesion de usuario -->
         </div>
         <div class="uk-flex uk-flex-middle">
             <div class="button-select-search-cat-responsive-customers uk-box-shadow-hover-large uk-flex uk-flex-middle uk-flex-center">
@@ -216,7 +205,7 @@
                     <div>
                         <a href="">
                             <img class="image-bag-complete-order-responsive-customers" src="./data/Canasta-inactivo.png" alt="">
-                            <h6 class="uk-margin-remove text-bag-complete-order-responsive-customers">0</h6>
+                            <h6 class="uk-margin-remove text-bag-complete-order-main-responsive-customers">0</h6>
                         </a>
                     </div>
                 </div>
@@ -225,15 +214,15 @@
         <div id="menu-categories-responsive-customers" class="background-menus-responsive-customers">
             <div class="uk-margin-remove-right style-menu-categories-responsive-customers">
                 <ul class="uk-list">
-                    <h5 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-10">Industrial</h5>
+                    <h5 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-15">Industrial</h5>
                     <div class="hr-tab uk-margin-remove"></div>
-                    <h5 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-10">Comidas</h5>
+                    <h5 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-15">Comidas</h5>
                     <div class="hr-tab uk-margin-remove"></div>
-                    <h5 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-10">Accesorios</h5>
+                    <h5 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-15">Accesorios</h5>
                     <div class="hr-tab uk-margin-remove"></div>
-                    <h5 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-10">Bicicletas</h5>
+                    <h5 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-15">Bicicletas</h5>
                     <div class="hr-tab uk-margin-remove"></div>
-                    <h5 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-10">Deportivo</h5>
+                    <h5 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-15">Deportivo</h5>
                 </ul>
             </div>
         </div>
@@ -263,16 +252,16 @@
         <div id="menu-subcategories-responsive-customers" class="background-menus-responsive-customers">
             <div class="uk-margin-remove-right style-menu-categories-responsive-customers">
                 <ul class="uk-list">
-                    <h5 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-10">Mocacines formales</h5>
+                    <h5 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-15">Mocacines formales</h5>
                     <div class="hr-tab uk-margin-remove"></div>
-                    <h5 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-10">Mocacines informales</h5>
+                    <h5 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-15">Mocacines informales</h5>
                     <div class="hr-tab uk-margin-remove"></div>
-                    <h5 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-10">Mocaciones deportivos</h5>
+                    <h5 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-15">Mocaciones deportivos</h5>
                 </ul>
             </div>
         </div>
         <!-- contenido de agregar producto -->
-        <div style="padding: 20px;">
+        <div style="padding: 20px; padding-top: 0px !important;">
             <h6 class="uk-margin-remove uk-text-muted">Zapatos > Mocacines > Mocacines Formales</h6>
             <h3 class="uk-text-bold uk-margin-remove" style="padding-top: 5px;">Mocacines</h3>
             <div class="uk-flex " style="margin-top: 5px;">
@@ -416,15 +405,15 @@
                 <div style="position: absolute;">
                     <div class="uk-flex uk-flex-middle">
                         <div>
-                            <div class="img-items-galery-responsive-customers cursor-pointer" style="background-image: url(./data/shoes1.png); " uk-img></div>
+                            <div class="img-items-galery-responsive-customers" style="background-image: url(./data/shoes1.png); " uk-img></div>
                             <h5 class="uk-margin-remove uk-text-bold uk-text-center">BLACK</h5>
                         </div>
                         <div>
-                            <div class="img-items-galery-responsive-customers cursor-pointer" style="background-image: url(./data/shoes1.png); " uk-img></div>
+                            <div class="img-items-galery-responsive-customers" style="background-image: url(./data/shoes1.png); " uk-img></div>
                             <h5 class="uk-margin-remove uk-text-bold uk-text-center">BLUE</h5>
                         </div>
                         <div>
-                            <div class="img-items-galery-responsive-customers cursor-pointer" style="background-image: url(./data/shoes1.png); " uk-img></div>
+                            <div class="img-items-galery-responsive-customers" style="background-image: url(./data/shoes1.png); " uk-img></div>
                             <h5 class="uk-margin-remove uk-text-bold uk-text-center">CUOIO</h5>
                         </div>
                     </div>
@@ -470,7 +459,7 @@
                 </div>
                 <div>
                     <h4 class="uk-margin-remove">Productos relacionados</h4>
-                    <div class="uk-flex uk-flex-around">
+                    <div class="uk-flex uk-flex-around" style="margin-top: 20px;">
                         <div>
                             <div class="img-items-gallery-relation-responsive-customers cursor-pointer" style="background-image: url(./data/shoes1.png); " uk-img></div>
                             <h4 class="uk-margin-remove uk-text-center">AK907</h4>
@@ -527,7 +516,7 @@
                 </div>
             </div>
         </div>
-        <div class="uk-flex uk-flex-middle uk-flex-around" style="padding-top: 84px;">
+        <div class="uk-flex uk-flex-middle uk-flex-around" style="padding-top: 86px;">
             <button class="button-select-log-in-responsive-customers uk-width-1-2 uk-flex uk-flex-center uk-flex-middle">
                 <h4 class="uk-margin-remove uk-text-bold">Inicia Sesión</h4>
             </button>
@@ -613,42 +602,46 @@
             </div>
         </div>
         <div style="padding-top: 84px;">
-            <div class="uk-flex uk-flex-center style-menu-register-address-responsive-customers" style="margin-bottom:20px ;">
-                <div style="margin-top: 20px;">
-                    <div class="uk-flex uk-flex-middle">
-                        <i class="fas fa-caret-left font-size-25" style="padding-right: 20px;"></i>
-                        <h4 class="uk-margin-remove uk-text-bold">Dirección</h4>
-                    </div>
+            <div style="margin-top: 20px; margin-bottom: 40px;">
+                <div class="uk-flex uk-flex-center">
                     <div>
-                        <h5 class="uk-margin-remove font-weight-600" style="padding-top: 15px;">Escribela y da click en “Localizar”</h5>
-                    </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-between buttons-input-register-address-responsive-customers padding-horizontal-20" style="margin-top: 40px;">
-                        <h5 class="uk-margin-remove">Selecciona tu ciudad</h5>
-                        <i class="fas fa-caret-down font-size-25"></i>
-                    </div>
-                    <div class="uk-flex uk-flex-middle" style="margin-top: 20px;">
-                        <div class="uk-flex uk-flex-middle uk-flex-between buttons-input-register-address-responsive-customers padding-horizontal-20" style="width: 110px; margin-right: 20px;">
-                            <h5 class="uk-margin-remove">Carrera</h5>
-                            <i class="fas fa-caret-down font-size-25"></i>
+                        <div class="uk-flex uk-flex-middle">
+                            <i class="fas fa-caret-left font-size-25" style="padding-right: 20px;"></i>
+                            <h4 class="uk-margin-remove uk-text-bold">Dirección</h4>
                         </div>
-                        <input class="input-register-address-responsive-customers uk-text-center" type="text" placeholder="16A SUR">
-                    </div>
-                    <div class="uk-flex uk-flex-middle" style="margin-top: 20px;">
-                        <input class="input-register-address-responsive-customers uk-text-center" style="width: 145px; margin-right: 20px;" type="text" placeholder="2C">
-                        <input class="input-register-address-responsive-customers uk-text-center" type="text" placeholder="32">
-                    </div>
-                    <div style="margin-top: 20px;">
-                        <input class="input-register-address-responsive-customers uk-text-center" style="width: 355px;" type="text" placeholder="Información Adicional">
-                    </div>
-                    <div style="margin-top: 30px;">
-                        <h4 class="uk-margin-remove uk-text-bold">Ubicación geográfica</h4>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16289433.401729723!2d-83.39814111764282!3d4.609691158847656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e15a43aae1594a3%3A0x9a0d9a04eff2a340!2sColombia!5e0!3m2!1ses!2sco!4v1614611543001!5m2!1ses!2sco"
-                            width="360" height="150" style="border:0; margin-top: 15px; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
-                        <div class="uk-flex uk-flex-center" style="margin-top: 20px;">
-                            <div class="uk-flex uk-flex-column">
-                                <button class="buttons-address-responsive-customers" style="background-color: black; color: white;">Localizar</button>
-                                <button class="buttons-address-responsive-customers">Siguiente</button>
+                        <div>
+                            <h5 class="uk-margin-remove font-weight-600" style="padding-top: 15px;">Escribela y da click en “Localizar”</h5>
+                        </div>
+                        <div class="uk-flex uk-flex-middle uk-flex-between buttons-input-register-address-responsive-customers padding-horizontal-20" style="margin-top: 40px;">
+                            <h5 class="uk-margin-remove color-grey">Selecciona tu ciudad</h5>
+                            <i class="fas fa-caret-down font-size-25 color-grey"></i>
+                        </div>
+                        <div class="uk-flex uk-flex-middle" style="margin-top: 20px;">
+                            <div class="uk-flex uk-flex-middle uk-flex-between buttons-input-register-address-responsive-customers padding-horizontal-20" style="width: 110px; margin-right: 20px;">
+                                <h5 class="uk-margin-remove color-grey">Carrera</h5>
+                                <i class="fas fa-caret-down font-size-25 color-grey"></i>
                             </div>
+                            <input class="input-register-address-responsive-customers uk-text-center" type="text" placeholder="16A SUR">
+                        </div>
+                        <div class="uk-flex uk-flex-middle" style="margin-top: 20px;">
+                            <input class="input-register-address-responsive-customers uk-text-center" style="width: 145px; margin-right: 20px;" type="text" placeholder="2C">
+                            <input class="input-register-address-responsive-customers uk-text-center" type="text" placeholder="32">
+                        </div>
+                        <div style="margin-top: 20px;">
+                            <input class="input-register-address-responsive-customers uk-text-center" style="width: 355px;" type="text" placeholder="Información Adicional">
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 30px;">
+                    <h4 class="uk-margin-remove uk-text-bold" style="padding-left: 25px;">Ubicación geográfica</h4>
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16289433.401729723!2d-83.39814111764282!3d4.609691158847656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e15a43aae1594a3%3A0x9a0d9a04eff2a340!2sColombia!5e0!3m2!1ses!2sco!4v1614611543001!5m2!1ses!2sco"
+                            width="100% !important" height="200" style="border:0; margin-top: 15px;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="uk-flex uk-flex-center" style="margin-top: 20px;">
+                        <div class="uk-flex uk-flex-column">
+                            <button class="buttons-address-responsive-customers" style="background-color: black; color: white;">Localizar</button>
+                            <button class="buttons-address-responsive-customers">Siguiente</button>
                         </div>
                     </div>
                 </div>
@@ -720,13 +713,19 @@
     <!-- Vista de Canasta de compras -->
     <div style="display: none;">
         <!-- navbar -->
-        <div class="navbar-responsive-customers">
+        <div class="navbar-view-main-responsive-customers">
             <div class="uk-flex uk-flex-middle uk-flex-between">
                 <div class="uk-flex uk-flex-middle cursor-pointer" style="padding-left: 20px;" href="#">
                     <i class="fas fa-caret-left font-size-35"></i>
                     <img class="image-logo-store-responsive-customers" src="./data/logo2.png" alt="">
                 </div>
-                <div style="padding-right: 30px;">
+                <div class="uk-flex uk-flex-middle" style="padding-right: 30px;">
+                    <div style="margin-right: 5px;">
+                        <button class="button-navbar-filter-responsive-customers" type="button" uk-toggle="target: .filter-responsive-active">
+                            <img class="image-filter-responsive-customers filter-responsive-active" src="./data/filtro-inactivo.png " alt=" " uk-img>
+                            <img class="image-filter-responsive-customers filter-responsive-active" src="./data/filtro-activo.png " alt=" " uk-img hidden>
+                        </button>
+                    </div>
                     <!-- boton inico de sesion  -->
                     <div>
                         <button onclick="openMenuResponsiveCustomers('log-in-user-responsive-customers')" class="button-user-responsive-customers" type="button" uk-toggle="target: .user-responsive-active">
@@ -743,10 +742,6 @@
                     </div> -->
                 </div>
             </div>
-            <div class="uk-flex uk-flex-center">
-                <input class="input-search-product-responsive-customers" type="text" placeholder="Busca tu producto">
-            </div>
-            <!-- Contenido inicio de sesion de usuario -->
             <div id="menu-log-in-responsive-customers" class="background-menus-responsive-customers">
                 <div class="style-menu-log-in-responsive-customers">
                     <div class="uk-flex uk-flex-middle uk-flex-around">
@@ -884,8 +879,12 @@
                     </div>
                 </div>
             </div> -->
+            <div class="uk-flex uk-flex-center">
+                <input class="input-search-product-responsive-customers" type="text" placeholder="Busca tu producto">
+            </div>
+            <!-- Contenido inicio de sesion de usuario -->
         </div>
-        <div class="uk-flex uk-flex-middle" style="padding-top: 151px;">
+        <div class="uk-flex uk-flex-middle">
             <div class="button-select-search-cat-responsive-customers uk-box-shadow-hover-large uk-flex uk-flex-middle uk-flex-center">
                 <button onclick="openMenuResponsiveCustomers('categories-responsive-customers')" class="uk-text-capitalize uk-text-bold uk-button uk-button-default button-search-cat-responsive-customers">Zapatos</button>
             </div>
@@ -897,11 +896,60 @@
                     <div class="hr-vertical"></div>
                     <div>
                         <a href="">
-                            <img class="image-bag-complete-order-responsive-customers" src="./data/Canasta-inactivo.png" alt="">
-                            <h6 class="uk-margin-remove text-bag-complete-order-responsive-customers">1</h6>
+                            <img class="image-bag-gallery-order-responsive-customers" src="./data/Canasta-inactivo.png" alt="">
+                            <h6 class="uk-margin-remove text-bag-gallery-order-responsive-customers">1</h6>
                         </a>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div id="menu-categories-responsive-customers" class="background-menus-responsive-customers">
+            <div class="uk-margin-remove-right style-menu-categories-responsive-customers">
+                <ul class="uk-list">
+                    <h5 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-15">Industrial</h5>
+                    <div class="hr-tab uk-margin-remove"></div>
+                    <h5 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-15">Comidas</h5>
+                    <div class="hr-tab uk-margin-remove"></div>
+                    <h5 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-15">Accesorios</h5>
+                    <div class="hr-tab uk-margin-remove"></div>
+                    <h5 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-15">Bicicletas</h5>
+                    <div class="hr-tab uk-margin-remove"></div>
+                    <h5 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-15">Deportivo</h5>
+                </ul>
+            </div>
+        </div>
+        <!--Contenido Busqueda por categorias-->
+        <div class="uk-flex uk-flex-middle scrollhorizontal-responsive-customers">
+            <div class="uk-text-center " style="margin-right: 20px; ">
+                <div onclick="openMenuResponsiveCustomers('subcategories-responsive-customers')" class="img-items-products-responsive-customers" style="background-image: url(./data/shoes1.png); " uk-img></div>
+                <h5 class="uk-margin-remove uk-text-bold ">Mocacines</h5>
+            </div>
+            <div onclick="openMenuResponsiveCustomers('subcategories-responsive-customers')" class="uk-text-center " style="margin-right: 20px; ">
+                <div class="img-items-products-responsive-customers" style="background-image: url(./data/shoes1.png); " uk-img></div>
+                <h5 class="uk-margin-remove uk-text-bold uk-text-center ">Formales</h5>
+            </div>
+            <div onclick="openMenuResponsiveCustomers('subcategories-responsive-customers')" class="uk-text-center " style="margin-right: 20px; ">
+                <div class="img-items-products-responsive-customers" style="background-image: url(./data/shoes1.png); " uk-img></div>
+                <h5 class="uk-margin-remove uk-text-bold uk-text-center ">Formales</h5>
+            </div>
+            <div onclick="openMenuResponsiveCustomers('subcategories-responsive-customers')" class="uk-text-center " style="margin-right: 20px; ">
+                <div class="img-items-products-responsive-customers" style="background-image: url(./data/shoes1.png); " uk-img></div>
+                <h5 class="uk-margin-remove uk-text-bold uk-text-center ">Formales</h5>
+            </div>
+            <div onclick="openMenuResponsiveCustomers('subcategories-responsive-customers')" class="uk-text-center " style="margin-right: 20px; ">
+                <div class="img-items-products-responsive-customers" style="background-image: url(./data/shoes1.png); " uk-img></div>
+                <h5 class="uk-margin-remove uk-text-bold uk-text-center ">Formales</h5>
+            </div>
+        </div>
+        <div id="menu-subcategories-responsive-customers" class="background-menus-responsive-customers">
+            <div class="uk-margin-remove-right style-menu-categories-responsive-customers">
+                <ul class="uk-list">
+                    <h5 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-15">Mocacines formales</h5>
+                    <div class="hr-tab uk-margin-remove"></div>
+                    <h5 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-15">Mocacines informales</h5>
+                    <div class="hr-tab uk-margin-remove"></div>
+                    <h5 class="uk-margin-remove uk-text-center uk-text-bold padding-vertical-15">Mocaciones deportivos</h5>
+                </ul>
             </div>
         </div>
         <div style="padding: 20px; ">
@@ -909,7 +957,7 @@
                 <div class="icon-close-basket-responsive-customers uk-flex uk-flex-middle uk-flex-center">
                     <i class="fas fa-times font-size-18"></i>
                 </div>
-                <div class="padding-horizontal-20 ">
+                <div class="padding-horizontal-20" style="margin-bottom: 25px;">
                     <h2 class="uk-text-bold uk-margin-remove ">Tu Canasta</h2>
                     <h6 class="uk-text-light uk-margin-remove cursor-pointer">Volver a tienda</h6>
                 </div>
@@ -969,8 +1017,8 @@
                 </div>
             </div>
             <div style="margin-top: 30px;">
-                <h4 class="uk-margin-remove">Productos relacionados</h4>
-                <div class="uk-flex uk-flex-around">
+                <h4 class="uk-margin-remove uk-text-bold padding-horizontal-10">Productos relacionados</h4>
+                <div class="uk-flex uk-flex-around" style="margin-top: 25px;">
                     <div>
                         <div class="img-items-gallery-relation-responsive-customers cursor-pointer" style="background-image: url(./data/shoes1.png); " uk-img></div>
                         <h4 class="uk-margin-remove uk-text-center">AK907</h4>
@@ -1016,7 +1064,7 @@
                 <h2 class="uk-margin-remove uk-text-bold">Completa tu pedido</h2>
             </div>
             <div style="margin-top: 20px;">
-                <img style="height: 80px; width:160px ;" src="./data/logo2.png" alt="">
+                <img style="height: 90px; width:170px ;" src="./data/logo2.png" alt="">
             </div>
             <div class="uk-flex uk-flex-around">
                 <div style="padding-top: 20px; ">
@@ -1030,7 +1078,7 @@
                         <h5 class="uk-margin-remove" style="position: absolute; top: 130px; left: 10px;">1 Producto</h5>
                     </div>
                 </div>
-                <div class="uk-margin-remove" style="padding-top: 50px; ">
+                <div class="uk-margin-remove" style="padding-top: 50px;">
                     <h5 class="uk-margin-remove uk-text-bold width-200">EDERA SPORT MONACO</h5>
                     <h5 class="uk-margin-remove" style="padding-top: 10px; ">75,000$</h5>
                 </div>
@@ -1050,7 +1098,7 @@
                         <h5 class="uk-margin-remove uk-text-bold" style="color: rgb(105, 105, 105);">0$</h5>
                     </div>
                 </div>
-                <div style="margin-top: 20px;">
+                <div style="margin-top: 30px;">
                     <div class="uk-flex uk-flex-middle uk-flex-between">
                         <h5 class="uk-margin-remove uk-text-bold">¿Tienes un cupon?</h5>
                         <button class="button-change-complete-order-respomsive-customers">Ingresar</button>
@@ -1059,13 +1107,13 @@
                         <h5 class="uk-margin-remove" style="color: rgb(105, 105, 105);">Ingresar cupón</h5>
                     </div>
                 </div>
-                <div style="margin-top: 20px;">
+                <div style="margin-top: 30px;">
                     <div class="uk-flex uk-flex-middle uk-flex-between">
                         <h5 class="uk-margin-remove uk-text-bold">Dirección de entrega:</h5>
                         <h5 class="uk-margin-remove font-size-15" style="color: #3AB048; font-weight: 700; padding-right: 10px;">Cambiar</h5>
                     </div>
                     <div>
-                        <h4 class="uk-margin-remove padding-vertical-5 font-weight-500">CL 3 AN # 08 - 139</h4>
+                        <h4 class="uk-margin-remove padding-vertical-5 font-weight-500 font-size-16">CL 3 AN # 08 - 139</h4>
                         <h5 class="uk-margin-remove">Ej: Oficina 304</h5>
                     </div>
                     <div class="uk-flex uk-flex-middle uk-flex-between" style="margin-top: 20px;">
@@ -1073,7 +1121,7 @@
                         <h5 class="uk-margin-remove uk-text-bold" style="color: rgb(105, 105, 105);">33 - 48 mins</h5>
                     </div>
                 </div>
-                <div style="margin-top: 20px;">
+                <div style="margin-top: 60px;">
                     <div class="uk-flex uk-flex-middle uk-flex-between">
                         <h5 class="uk-margin-remove uk-text-bold">Resumen</h5>
                         <button class="button-change-complete-order-respomsive-customers" style="">Resumen extendido</button>
@@ -1111,10 +1159,23 @@
             <div class="uk-flex uk-flex-middle padding-horizontal-40 padding-vertical-20">
                 <img class="icons-select-cards-payment-method-responsive-customers" src="./data/dinero-recurso.png" alt="">
                 <h4 class="uk-margin-remove uk-text-bold padding-horizontal-20">Efectivo</h4>
+                <div class="radio-item" style="margin-left: 17px;">
+                    <input type="radio" id="ritema" name="ritem" value="ropt1">
+                    <label for="ritema"></label>
+                </div>
+            </div>
+            <div class="uk-flex uk-flex-middle padding-horizontal-40" style="padding-bottom: 30px;" uk-toggle="target: #toggle-usage">
+                <img class="icons-select-cards-payment-method-responsive-customers" style="height: 70px;" src="./data/PSE.png" alt="">
+                <h4 class="uk-margin-remove uk-text-bold padding-horizontal-20">PSE</h4>
+                <div class="radio-item" style="margin-left: 58px;">
+                    <input type="radio" id="ritemb" name="ritem" value="ropt2">
+                    <label for="ritemb"></label>
+                </div>
             </div>
             <div class="uk-flex uk-flex-middle padding-horizontal-40" style="padding-bottom: 30px;" uk-toggle="target: #toggle-usage">
                 <img class="icons-select-cards-payment-method-responsive-customers" src="./data/tarjetas-recursoo.png" alt="">
                 <h4 class="uk-margin-remove uk-text-bold padding-horizontal-20">Tarjeta</h4>
+                <i class="fas fa-caret-down font-size-25" style="margin-left: 30px;"></i>
             </div>
             <div id="toggle-usage" hidden>
                 <div class="hr-tab"></div>
@@ -1148,35 +1209,48 @@
                 <i class="fas fa-caret-left font-size-35" style="margin-right: 40px;"></i>
                 <h2 class="uk-margin-remove uk-text-bold">Agregar tarjeta</h2>
             </div>
-            <div class="uk-flex uk-flex-middle" style="margin-top: 40px;">
+            <div class="" style="margin-top: 30px;">
+                <h4 class="uk-margin-remove uk-text-muted uk-text-bold font-size-17">INFORMACIÓN DE FACTURACIÓN</h4>
+                <h5 class="uk-margin-remove uk-text-muted width-250">No se te hará ningún cargo hasta que realices una compra</h5>
+            </div>
+            <div style="margin-top: 40px;">
                 <div>
-                    <h5 class="uk-margin-remove uk-text-bold padding-vertical-10">Número de tarjeta</h5>
-                    <input class="input-add-card-responsive-customers" style="width: 200px;" type="text" placeholder="XXXX XXXX XXXX XXXX">
-                </div>
-                <img class="icons-select-cards-payment-method-responsive-customers" src="./data/tarjetas-recursoo.png" alt="">
-            </div>
-            <div style="margin-top: 30px;">
-                <h5 class="uk-margin-remove uk-text-bold padding-vertical-10">Titular</h5>
-                <div class="uk-flex uk-flex-middle uk-flex-between">
-                    <div>
-                        <h6 class="uk-margin-remove padding-vertical-5">Nombre</h6>
-                        <input class="input-add-card-responsive-customers " type="text">
-                    </div>
-                    <div>
-                        <h6 class="uk-margin-remove padding-vertical-5">Apellido</h6>
-                        <input class="input-add-card-responsive-customers " type="text">
-                    </div>
+                    <h5 class="uk-margin-remove uk-text-bold padding-vertical-10">Nombre</h5>
+                    <input class="input-add-card-responsive-customers" type="text" placeholder="Nombre en la tarjeta">
                 </div>
             </div>
             <div style="margin-top: 30px;">
-                <h5 class="uk-margin-remove uk-text-bold padding-vertical-10">Fecha de expiración</h5>
-                <input class="input-add-card-responsive-customers " type="text" placeholder="XX/XX">
+                <h5 class="uk-margin-remove uk-text-bold padding-vertical-10">Número de tarjeta</h5>
+                <input class="input-add-card-responsive-customers uk-text-center" type="text" placeholder="-">
+            </div>
+            <div style="margin-top: 30px;">
+                <h5 class="uk-margin-remove uk-text-bold padding-vertical-10">Caduca el:</h5>
+                <input class="input-add-card-responsive-customers uk-text-center" type="text" placeholder="MM/AAAA">
+            </div>
+            <div style="margin-top: 30px;">
+                <h5 class="uk-margin-remove uk-text-bold">Tipo:</h5>
+                <div class="uk-flex uk-flex-middle uk-flex-between" style="margin-top: 10px;">
+                    <div class="uk-flex uk-flex-around uk-flex-middle box-input-add-card-responsive-customers">
+                        <div>
+                            <h6 class="uk-margin-remove color-grey">CC</h6>
+                        </div>
+                        <div>
+                            <i class="fas fa-caret-down color-grey"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <input class="input-add-card-responsive-customers" style="width: 210px;" type="text" placeholder="Número de documento">
+                    </div>
+                </div>
             </div>
             <div style="margin-top: 30px;">
                 <h5 class="uk-margin-remove uk-text-bold padding-vertical-10">CVC</h5>
-                <input class="input-add-card-responsive-customers " type="text" placeholder="XXX">
+                <input class="input-add-card-responsive-customers uk-text-center" type="text" placeholder="CVV">
             </div>
-            <button class="button-change-complete-order-respomsive-customers" style="width: 100px; margin-top: 30px;">Ingresar</button>
+            <div class="uk-flex uk-flex-center uk-flex-around">
+                <button class="button-save-card-responsive-customers uk-box-shadow-medium" style="background-color: rgb(211, 211, 211); font-weight: 500;">Cancelar</button>
+                <button class="button-save-card-responsive-customers uk-box-shadow-medium">Guardar</button>
+            </div>
         </div>
     </div>
     <!-- Vista para agregar dirección -->
@@ -1231,6 +1305,9 @@
                         <i class="fas fa-ellipsis-v font-size-25"></i>
                     </div>
                 </div>
+            </div>
+            <div class="uk-flex uk-flex-center">
+                <button class="button-save-card-responsive-customers uk-box-shadow-medium" style="margin-top: 0px !important; margin-bottom: 50px;">Continuar</button>
             </div>
         </div>
     </div>
@@ -1307,7 +1384,7 @@
         </div>
     </div>
     <!-- Tren de estados / Recibido-->
-    <div style="display: none;">
+    <div style="display: inline;">
         <!-- navbar -->
         <div class="navbar-responsive-customers" style="height: 85px;">
             <div class="uk-flex uk-flex-middle uk-flex-between">
@@ -1477,17 +1554,17 @@
         <div class="uk-flex uk-flex-center">
             <img class="train-status-responsive-customers" src="./data/1.png" alt="">
         </div>
-        <div class="uk-flex uk-flex-middle uk-flex-around">
-            <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12" style="padding-left: 18px ;">Recibido</h6>
-            <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12" style="padding-left: 19px;">En proceso</h6>
-            <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12 width-60 uk-text-center" style="padding-left: 5px;">Alistando Pedido</h6>
-            <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12" style="padding-right: 14px;">En Camino</h6>
+        <div class="uk-flex uk-flex-middle uk-flex-around padding-horizontal-15">
+            <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12">Recibido</h6>
+            <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12" style="padding-left: 20px;">En proceso</h6>
+            <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12 width-60 uk-text-center">Alistando Pedido</h6>
+            <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12">En Camino</h6>
         </div>
         <div class="padding-horizontal-20">
             <div style="padding-top: 30px;">
-                <h4 class="uk-margin-remove uk-text-bold">Resumen de tu pedido</h4>
+                <h4 class="uk-margin-remove uk-text-bold" style="padding-left: 15px;">Resumen de tu pedido</h4>
                 <div class="uk-flex uk-flex-middle padding-vertical-10">
-                    <h5 class="uk-margin-remove">Estado:</h5>
+                    <h5 class="uk-margin-remove" style="padding-left: 15px;">Estado:</h5>
                     <h5 class="uk-margin-remove uk-text-bold" style="padding-left: 5px;">Recibido</h5>
                 </div>
                 <div class="uk-flex uk-flex-around">
@@ -1526,8 +1603,8 @@
                     <div class="padding-horizontal-20">
                         <div class="uk-flex uk-flex-middle uk-flex-between" style="padding-bottom: 15px;">
                             <div class="uk-flex uk-flex-middle">
-                                <i class="fas fa-circle font-size-11 padding-horizontal-10"></i>
-                                <h5 class="uk-margin-remove uk-text-bold">Numero de productos</h5>
+                                <i class="fas fa-circle font-size-11"></i>
+                                <h5 class="uk-margin-remove uk-text-bold" style="padding-left: 10px;">Numero de productos</h5>
                             </div>
                             <div>
                                 <h5 class="uk-margin-remove">2</h5>
@@ -1535,8 +1612,8 @@
                         </div>
                         <div class="uk-flex uk-flex-middle uk-flex-between" style="padding-bottom: 15px;">
                             <div class="uk-flex uk-flex-middle">
-                                <i class="fas fa-circle font-size-11 padding-horizontal-10"></i>
-                                <h5 class="uk-margin-remove uk-text-bold">Sub-Total</h5>
+                                <i class="fas fa-circle font-size-11"></i>
+                                <h5 class="uk-margin-remove uk-text-bold" style="padding-left: 10px;">Sub-Total</h5>
                             </div>
                             <div>
                                 <h5 class="uk-margin-remove">$35.600</h5>
@@ -1544,8 +1621,8 @@
                         </div>
                         <div class="uk-flex uk-flex-middle uk-flex-between" style="padding-bottom: 15px;">
                             <div class="uk-flex uk-flex-middle">
-                                <i class="fas fa-circle font-size-11 padding-horizontal-10"></i>
-                                <h5 class="uk-margin-remove uk-text-bold">Domicilio</h5>
+                                <i class="fas fa-circle font-size-11"></i>
+                                <h5 class="uk-margin-remove uk-text-bold" style="padding-left: 10px;">Domicilio</h5>
                             </div>
                             <div>
                                 <h5 class="uk-margin-remove">$9.900</h5>
@@ -1561,7 +1638,7 @@
                         </div>
                     </div>
                     <div class="hr-tab padding-horizontal-10"></div>
-                    <div class="uk-flex uk-flex-middle uk-flex-between padding-horizontal-25 padding-vertical-20">
+                    <div class="uk-flex uk-flex-middle uk-flex-between padding-horizontal-25 padding-vertical-20" style="margin-bottom: 40px;">
                         <div>
                             <h4 class="uk-margin-remove uk-text-bold">TOTAL</h4>
                         </div>
@@ -1572,25 +1649,25 @@
                 </div>
                 <div class="padding-horizontal-20">
                     <div>
-                        <h5 class="uk-margin-remove uk-text-bold">Dirección Tienda (Empresa):</h5>
+                        <h5 class="uk-margin-remove uk-text-bold font-size-17">Dirección Tienda (Empresa):</h5>
                         <h5 class="uk-margin-remove">Cra. 48 # 123 - 73</h5>
                     </div>
                     <div class="padding-vertical-20">
-                        <h5 class="uk-margin-remove uk-text-bold">Se entrega en:</h5>
+                        <h5 class="uk-margin-remove uk-text-bold font-size-17">Se entrega en:</h5>
                         <h5 class="uk-margin-remove">Cra. 13 # 88-17</h5>
                     </div>
                     <div>
-                        <h5 class="uk-margin-remove uk-text-bold">El día:</h5>
+                        <h5 class="uk-margin-remove uk-text-bold font-size-17">El día:</h5>
                         <h5 class="uk-margin-remove font-weight-500">18 de Mayo</h5>
                         <h5 class="uk-margin-remove">En jornada de 1 pm a 4 pm</h5>
                     </div>
-                    <h4 class="uk-margin-remove uk-text-bold padding-vertical-20">Metodo de pago seleccionado:</h4>
+                    <h4 class="uk-margin-remove uk-text-bold" style="padding-top: 30px; padding-bottom: 20px;">Metodo de pago seleccionado:</h4>
                     <div class="uk-flex uk-flex-middle">
-                        <h5 class="uk-margin-remove uk-text-bold">Efectivo</h5>
+                        <h5 class="uk-margin-remove uk-text-bold font-size-17">Efectivo</h5>
                         <img class="icono-cash-responsive-customers " src="./data/dinero-recurso.png" alt="">
                     </div>
                     <div>
-                        <h5 class="uk-margin-remove uk-text-bold width-250 padding-vertical-20">*Cualquier inconveniente con el envio te sera comunicado por correo electrónico.</h5>
+                        <h5 class="uk-margin-remove uk-text-bold width-250 padding-vertical-20 font-size-17">*Cualquier inconveniente con el envio te sera comunicado por correo electrónico.</h5>
                     </div>
                 </div>
             </div>
@@ -1767,17 +1844,17 @@
         <div class="uk-flex uk-flex-center">
             <img class="train-status-responsive-customers" src="./data/2.png" alt="">
         </div>
-        <div class="uk-flex uk-flex-middle uk-flex-around">
-            <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12" style="padding-left: 18px ;">Recibido</h6>
-            <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12" style="padding-left: 19px;">En proceso</h6>
-            <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12 width-60 uk-text-center" style="padding-left: 5px;">Alistando Pedido</h6>
-            <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12" style="padding-right: 14px;">En Camino</h6>
+        <div class="uk-flex uk-flex-middle uk-flex-around padding-horizontal-15">
+            <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12">Recibido</h6>
+            <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12" style="padding-left: 20px;">En proceso</h6>
+            <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12 width-60 uk-text-center">Alistando Pedido</h6>
+            <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12">En Camino</h6>
         </div>
         <div class="padding-horizontal-20">
             <div style="padding-top: 30px;">
-                <h4 class="uk-margin-remove uk-text-bold">Resumen de tu pedido</h4>
+                <h4 class="uk-margin-remove uk-text-bold" style="padding-left: 15px;">Resumen de tu pedido</h4>
                 <div class="uk-flex uk-flex-middle padding-vertical-10">
-                    <h5 class="uk-margin-remove">Estado:</h5>
+                    <h5 class="uk-margin-remove" style="padding-left: 15px;">Estado:</h5>
                     <h5 class="uk-margin-remove uk-text-bold" style="padding-left: 5px;">En proceso</h5>
                 </div>
                 <div class="uk-flex uk-flex-around">
@@ -1816,8 +1893,8 @@
                     <div class="padding-horizontal-20">
                         <div class="uk-flex uk-flex-middle uk-flex-between" style="padding-bottom: 15px;">
                             <div class="uk-flex uk-flex-middle">
-                                <i class="fas fa-circle font-size-11 padding-horizontal-10"></i>
-                                <h5 class="uk-margin-remove uk-text-bold">Numero de productos</h5>
+                                <i class="fas fa-circle font-size-11"></i>
+                                <h5 class="uk-margin-remove uk-text-bold" style="padding-left: 10px;">Numero de productos</h5>
                             </div>
                             <div>
                                 <h5 class="uk-margin-remove">2</h5>
@@ -1825,8 +1902,8 @@
                         </div>
                         <div class="uk-flex uk-flex-middle uk-flex-between" style="padding-bottom: 15px;">
                             <div class="uk-flex uk-flex-middle">
-                                <i class="fas fa-circle font-size-11 padding-horizontal-10"></i>
-                                <h5 class="uk-margin-remove uk-text-bold">Sub-Total</h5>
+                                <i class="fas fa-circle font-size-11"></i>
+                                <h5 class="uk-margin-remove uk-text-bold" style="padding-left: 10px;">Sub-Total</h5>
                             </div>
                             <div>
                                 <h5 class="uk-margin-remove">$35.600</h5>
@@ -1834,8 +1911,8 @@
                         </div>
                         <div class="uk-flex uk-flex-middle uk-flex-between" style="padding-bottom: 15px;">
                             <div class="uk-flex uk-flex-middle">
-                                <i class="fas fa-circle font-size-11 padding-horizontal-10"></i>
-                                <h5 class="uk-margin-remove uk-text-bold">Domicilio</h5>
+                                <i class="fas fa-circle font-size-11"></i>
+                                <h5 class="uk-margin-remove uk-text-bold" style="padding-left: 10px;">Domicilio</h5>
                             </div>
                             <div>
                                 <h5 class="uk-margin-remove">$9.900</h5>
@@ -1851,7 +1928,7 @@
                         </div>
                     </div>
                     <div class="hr-tab padding-horizontal-10"></div>
-                    <div class="uk-flex uk-flex-middle uk-flex-between padding-horizontal-25 padding-vertical-20">
+                    <div class="uk-flex uk-flex-middle uk-flex-between padding-horizontal-25 padding-vertical-20" style="margin-bottom: 40px;">
                         <div>
                             <h4 class="uk-margin-remove uk-text-bold">TOTAL</h4>
                         </div>
@@ -1862,25 +1939,25 @@
                 </div>
                 <div class="padding-horizontal-20">
                     <div>
-                        <h5 class="uk-margin-remove uk-text-bold">Dirección Tienda (Empresa):</h5>
+                        <h5 class="uk-margin-remove uk-text-bold font-size-17">Dirección Tienda (Empresa):</h5>
                         <h5 class="uk-margin-remove">Cra. 48 # 123 - 73</h5>
                     </div>
                     <div class="padding-vertical-20">
-                        <h5 class="uk-margin-remove uk-text-bold">Se entrega en:</h5>
+                        <h5 class="uk-margin-remove uk-text-bold font-size-17">Se entrega en:</h5>
                         <h5 class="uk-margin-remove">Cra. 13 # 88-17</h5>
                     </div>
                     <div>
-                        <h5 class="uk-margin-remove uk-text-bold">El día:</h5>
+                        <h5 class="uk-margin-remove uk-text-bold font-size-17">El día:</h5>
                         <h5 class="uk-margin-remove font-weight-500">18 de Mayo</h5>
                         <h5 class="uk-margin-remove">En jornada de 1 pm a 4 pm</h5>
                     </div>
-                    <h4 class="uk-margin-remove uk-text-bold padding-vertical-20">Metodo de pago seleccionado:</h4>
+                    <h4 class="uk-margin-remove uk-text-bold" style="padding-top: 30px; padding-bottom: 20px;">Metodo de pago seleccionado:</h4>
                     <div class="uk-flex uk-flex-middle">
-                        <h5 class="uk-margin-remove uk-text-bold">Efectivo</h5>
+                        <h5 class="uk-margin-remove uk-text-bold font-size-17">Efectivo</h5>
                         <img class="icono-cash-responsive-customers " src="./data/dinero-recurso.png" alt="">
                     </div>
                     <div>
-                        <h5 class="uk-margin-remove uk-text-bold width-250 padding-vertical-20">*Cualquier inconveniente con el envio te sera comunicado por correo electrónico.</h5>
+                        <h5 class="uk-margin-remove uk-text-bold width-250 padding-vertical-20 font-size-17">*Cualquier inconveniente con el envio te sera comunicado por correo electrónico.</h5>
                     </div>
                 </div>
             </div>
@@ -2057,17 +2134,17 @@
         <div class="uk-flex uk-flex-center">
             <img class="train-status-responsive-customers" src="./data/3.png" alt="">
         </div>
-        <div class="uk-flex uk-flex-middle uk-flex-around">
-            <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12" style="padding-left: 18px ;">Recibido</h6>
-            <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12" style="padding-left: 19px;">En proceso</h6>
-            <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12 width-60 uk-text-center" style="padding-left: 5px;">Alistando Pedido</h6>
-            <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12" style="padding-right: 14px;">En Camino</h6>
+        <div class="uk-flex uk-flex-middle uk-flex-around padding-horizontal-15">
+            <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12">Recibido</h6>
+            <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12" style="padding-left: 20px;">En proceso</h6>
+            <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12 width-60 uk-text-center">Alistando Pedido</h6>
+            <h6 class="uk-margin-remove uk-text-bold uk-text-center font-size-12">En Camino</h6>
         </div>
         <div class="padding-horizontal-20">
             <div style="padding-top: 30px;">
-                <h4 class="uk-margin-remove uk-text-bold">Resumen de tu pedido</h4>
+                <h4 class="uk-margin-remove uk-text-bold" style="padding-left: 15px;">Resumen de tu pedido</h4>
                 <div class="uk-flex uk-flex-middle padding-vertical-10">
-                    <h5 class="uk-margin-remove">Estado:</h5>
+                    <h5 class="uk-margin-remove" style="padding-left: 15px;">Estado:</h5>
                     <h5 class="uk-margin-remove uk-text-bold" style="padding-left: 5px;">Alistando Pedido</h5>
                 </div>
                 <div class="uk-flex uk-flex-around">
@@ -2106,8 +2183,8 @@
                     <div class="padding-horizontal-20">
                         <div class="uk-flex uk-flex-middle uk-flex-between" style="padding-bottom: 15px;">
                             <div class="uk-flex uk-flex-middle">
-                                <i class="fas fa-circle font-size-11 padding-horizontal-10"></i>
-                                <h5 class="uk-margin-remove uk-text-bold">Numero de productos</h5>
+                                <i class="fas fa-circle font-size-11"></i>
+                                <h5 class="uk-margin-remove uk-text-bold" style="padding-left: 10px;">Numero de productos</h5>
                             </div>
                             <div>
                                 <h5 class="uk-margin-remove">2</h5>
@@ -2115,8 +2192,8 @@
                         </div>
                         <div class="uk-flex uk-flex-middle uk-flex-between" style="padding-bottom: 15px;">
                             <div class="uk-flex uk-flex-middle">
-                                <i class="fas fa-circle font-size-11 padding-horizontal-10"></i>
-                                <h5 class="uk-margin-remove uk-text-bold">Sub-Total</h5>
+                                <i class="fas fa-circle font-size-11"></i>
+                                <h5 class="uk-margin-remove uk-text-bold" style="padding-left: 10px;">Sub-Total</h5>
                             </div>
                             <div>
                                 <h5 class="uk-margin-remove">$35.600</h5>
@@ -2124,8 +2201,8 @@
                         </div>
                         <div class="uk-flex uk-flex-middle uk-flex-between" style="padding-bottom: 15px;">
                             <div class="uk-flex uk-flex-middle">
-                                <i class="fas fa-circle font-size-11 padding-horizontal-10"></i>
-                                <h5 class="uk-margin-remove uk-text-bold">Domicilio</h5>
+                                <i class="fas fa-circle font-size-11"></i>
+                                <h5 class="uk-margin-remove uk-text-bold" style="padding-left: 10px;">Domicilio</h5>
                             </div>
                             <div>
                                 <h5 class="uk-margin-remove">$9.900</h5>
@@ -2141,7 +2218,7 @@
                         </div>
                     </div>
                     <div class="hr-tab padding-horizontal-10"></div>
-                    <div class="uk-flex uk-flex-middle uk-flex-between padding-horizontal-25 padding-vertical-20">
+                    <div class="uk-flex uk-flex-middle uk-flex-between padding-horizontal-25 padding-vertical-20" style="margin-bottom: 40px;">
                         <div>
                             <h4 class="uk-margin-remove uk-text-bold">TOTAL</h4>
                         </div>
@@ -2152,25 +2229,25 @@
                 </div>
                 <div class="padding-horizontal-20">
                     <div>
-                        <h5 class="uk-margin-remove uk-text-bold">Dirección Tienda (Empresa):</h5>
+                        <h5 class="uk-margin-remove uk-text-bold font-size-17">Dirección Tienda (Empresa):</h5>
                         <h5 class="uk-margin-remove">Cra. 48 # 123 - 73</h5>
                     </div>
                     <div class="padding-vertical-20">
-                        <h5 class="uk-margin-remove uk-text-bold">Se entrega en:</h5>
+                        <h5 class="uk-margin-remove uk-text-bold font-size-17">Se entrega en:</h5>
                         <h5 class="uk-margin-remove">Cra. 13 # 88-17</h5>
                     </div>
                     <div>
-                        <h5 class="uk-margin-remove uk-text-bold">El día:</h5>
+                        <h5 class="uk-margin-remove uk-text-bold font-size-17">El día:</h5>
                         <h5 class="uk-margin-remove font-weight-500">18 de Mayo</h5>
                         <h5 class="uk-margin-remove">En jornada de 1 pm a 4 pm</h5>
                     </div>
-                    <h4 class="uk-margin-remove uk-text-bold padding-vertical-20">Metodo de pago seleccionado:</h4>
+                    <h4 class="uk-margin-remove uk-text-bold" style="padding-top: 30px; padding-bottom: 20px;">Metodo de pago seleccionado:</h4>
                     <div class="uk-flex uk-flex-middle">
-                        <h5 class="uk-margin-remove uk-text-bold">Efectivo</h5>
+                        <h5 class="uk-margin-remove uk-text-bold font-size-17">Efectivo</h5>
                         <img class="icono-cash-responsive-customers " src="./data/dinero-recurso.png" alt="">
                     </div>
                     <div>
-                        <h5 class="uk-margin-remove uk-text-bold width-250 padding-vertical-20">*Cualquier inconveniente con el envio te sera comunicado por correo electrónico.</h5>
+                        <h5 class="uk-margin-remove uk-text-bold width-250 padding-vertical-20 font-size-17">*Cualquier inconveniente con el envio te sera comunicado por correo electrónico.</h5>
                     </div>
                 </div>
             </div>
@@ -2356,17 +2433,17 @@
         <div>
             <div style="padding-top: 30px;">
                 <div class="padding-horizontal-20">
-                    <h4 class="uk-margin-remove uk-text-bold">Resumen de tu pedido</h4>
+                    <h4 class="uk-margin-remove uk-text-bold" style="padding-left: 15px;">Resumen de tu pedido</h4>
                 </div>
                 <div class="uk-flex uk-flex-middle padding-vertical-10 padding-horizontal-20">
-                    <h5 class="uk-margin-remove">Estado:</h5>
+                    <h5 class="uk-margin-remove" style="padding-left: 15px;">Estado:</h5>
                     <h5 class="uk-margin-remove uk-text-bold" style="padding-left: 5px;">En Camino</h5>
                 </div>
                 <div>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16289433.401729723!2d-83.39814111764282!3d4.609691158847656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e15a43aae1594a3%3A0x9a0d9a04eff2a340!2sColombia!5e0!3m2!1ses!2sco!4v1614961320830!5m2!1ses!2sco"
                         width="100%" height="220" style="border:0; margin-top: 30px; margin-bottom: 30px;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <div class="padding-horizontal-25" style="margin-bottom: 30px;">
+                <div class="padding-horizontal-30" style="margin-bottom: 30px;">
                     <h5 class="uk-margin-remove uk-text-bold">Tiempo aproximado de llegada:</h5>
                     <h5 class="uk-margin-remove font-weight-500" style="padding-top: 15px; padding-bottom: 25px;">11 minutos</h5>
                     <h6 class="uk-margin-remove width-250">*Cualquier inconveniente con el envio te sera comunicado por correo electrónico.</h6>
@@ -2407,7 +2484,7 @@
                     <div class="padding-horizontal-20">
                         <div class="uk-flex uk-flex-middle uk-flex-between" style="padding-bottom: 15px;">
                             <div class="uk-flex uk-flex-middle">
-                                <i class="fas fa-circle font-size-11 padding-horizontal-10"></i>
+                                <i class="fas fa-circle font-size-11" style="padding-right: 10px;"></i>
                                 <h5 class="uk-margin-remove uk-text-bold">Numero de productos</h5>
                             </div>
                             <div>
@@ -2416,7 +2493,7 @@
                         </div>
                         <div class="uk-flex uk-flex-middle uk-flex-between" style="padding-bottom: 15px;">
                             <div class="uk-flex uk-flex-middle">
-                                <i class="fas fa-circle font-size-11 padding-horizontal-10"></i>
+                                <i class="fas fa-circle font-size-11" style="padding-right: 10px;"></i>
                                 <h5 class="uk-margin-remove uk-text-bold">Sub-Total</h5>
                             </div>
                             <div>
@@ -2425,7 +2502,7 @@
                         </div>
                         <div class="uk-flex uk-flex-middle uk-flex-between" style="padding-bottom: 15px;">
                             <div class="uk-flex uk-flex-middle">
-                                <i class="fas fa-circle font-size-11 padding-horizontal-10"></i>
+                                <i class="fas fa-circle font-size-11" style="padding-right: 10px;"></i>
                                 <h5 class="uk-margin-remove uk-text-bold">Domicilio</h5>
                             </div>
                             <div>
@@ -2451,27 +2528,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="padding-horizontal-25">
+                <div class="padding-horizontal-40">
                     <div>
-                        <h5 class="uk-margin-remove uk-text-bold">Dirección Tienda (Empresa):</h5>
+                        <h5 class="uk-margin-remove uk-text-bold font-size-17">Dirección Tienda (Empresa):</h5>
                         <h5 class="uk-margin-remove">Cra. 48 # 123 - 73</h5>
                     </div>
                     <div class="padding-vertical-20">
-                        <h5 class="uk-margin-remove uk-text-bold">Se entrega en:</h5>
+                        <h5 class="uk-margin-remove uk-text-bold font-size-17">Se entrega en:</h5>
                         <h5 class="uk-margin-remove">Cra. 13 # 88-17</h5>
                     </div>
                     <div>
-                        <h5 class="uk-margin-remove uk-text-bold">El día:</h5>
+                        <h5 class="uk-margin-remove uk-text-bold font-size-17">El día:</h5>
                         <h5 class="uk-margin-remove font-weight-500">18 de Mayo</h5>
                         <h5 class="uk-margin-remove">En jornada de 1 pm a 4 pm</h5>
                     </div>
-                    <h4 class="uk-margin-remove uk-text-bold padding-vertical-20">Metodo de pago seleccionado:</h4>
+                    <h4 class="uk-margin-remove uk-text-bold" style="padding-top: 30px; padding-bottom: 20px;">Metodo de pago seleccionado:</h4>
                     <div class="uk-flex uk-flex-middle">
-                        <h5 class="uk-margin-remove uk-text-bold">Efectivo</h5>
+                        <h5 class="uk-margin-remove uk-text-bold font-size-17">Efectivo</h5>
                         <img class="icono-cash-responsive-customers " src="./data/dinero-recurso.png" alt="">
                     </div>
                     <div>
-                        <h5 class="uk-margin-remove uk-text-bold width-250 padding-vertical-20">*Cualquier inconveniente con el envio te sera comunicado por correo electrónico.</h5>
+                        <h5 class="uk-margin-remove uk-text-bold width-250 padding-vertical-20 font-size-17">*Cualquier inconveniente con el envio te sera comunicado por correo electrónico.</h5>
                     </div>
                 </div>
             </div>
