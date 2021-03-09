@@ -301,7 +301,6 @@
 }
 
 .background-grey-galery-responsive-customers {
-    background-color: #F2F2F2;
     height: 450px;
     width: 100%;
 }
@@ -323,6 +322,7 @@
     background-size: 100% auto;
     border: 1px solid rgb(144, 144, 144);
     margin: 5px;
+    background-color: none;
 }
 
 .button-galery-options-responsive-customers {
@@ -367,8 +367,16 @@
 }
 
 .text-bag-gallery-order-responsive-customers {
+    right: 57px;
+    top: 118px;
+    font-weight: 700;
+    position: absolute;
+    font-size: 12px;
+}
+
+.text-bag-basket-order-responsive-customers {
     right: 55px;
-    top: 35px;
+    top: 34px;
     font-weight: 700;
     position: absolute;
     font-size: 12px;
@@ -622,12 +630,8 @@
 }
 
 .icon-close-basket-responsive-customers {
-    background-color: #FBF38C;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    color: black;
-    margin-top: 3px;
+    width: 35px;
+    height: 35px;
 }
 
 .img-items-products-basket-responsive-customers {
@@ -652,12 +656,8 @@
 }
 
 .icon-plus-minus-basket-responsive-customers {
-    background-color: #0e700e;
-    font-size: 20px;
     width: 35px;
     height: 35px;
-    border-radius: 50%;
-    color: white;
 }
 
 .like-size-basket-responsive-customers {
@@ -731,7 +731,7 @@
 
 .button-change-complete-order-respomsive-customers {
     height: 40px;
-    border: 1px solid black;
+    border: 1px solid rgb(153, 153, 153);
     background-color: white;
     color: #3AB048;
     font-size: 15px;
