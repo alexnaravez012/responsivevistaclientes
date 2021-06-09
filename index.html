@@ -19,7 +19,7 @@
 
 <body id="body-height-responsive-customers">
     <!-- Vista principal de tienda con busqueda por categorias y demas -->
-    <div style="display: inline;">
+    <div style="display: none;">
         <!-- navbar -->
         <div class="navbar-view-main-responsive-customers">
             <div class="uk-flex uk-flex-middle uk-flex-between">
@@ -35,22 +35,22 @@
                         </button>
                     </div>
                     <!-- boton inico de sesion  -->
-                    <!-- <div>
+                    <div>
                         <button onclick="openMenuResponsiveCustomers('log-in-user-responsive-customers')" class="button-user-responsive-customers" type="button" uk-toggle="target: .user-responsive-active">
                             <img class="image-user-responsive-customers user-responsive-active" src="./data/usuario-inactivo.png" alt=" " uk-img>
                             <img class="image-user-responsive-customers user-responsive-active" src="./data/usuario-activo.png " alt=" " uk-img hidden>
                         </button>
-                    </div> -->
+                    </div>
                     <!-- boton mis pedidos  -->
-                    <div>
+                    <!-- <div>
                         <button onclick="openMenuResponsiveCustomers('orders-responsive-customers')" class="button-user-responsive-customers" type="button" uk-toggle="target: .user-responsive-active">
                             <img class="image-user-responsive-customers user-responsive-active" src="./data/usuario-inactivo.png" alt=" " uk-img>
                             <img class="image-user-responsive-customers user-responsive-active" src="./data/usuario-activo.png " alt=" " uk-img hidden>
                         </button>
-                    </div>
+                    </div> -->
                 </div>
             </div>
-            <!-- <div id="menu-log-in-responsive-customers" class="background-menus-responsive-customers">
+            <div id="menu-log-in-responsive-customers" class="background-menus-responsive-customers">
                 <div class="style-menu-log-in-responsive-customers">
                     <div class="uk-flex uk-flex-middle uk-flex-around">
                         <button class="button-select-log-in-responsive-customers uk-width-1-2 uk-flex uk-flex-center uk-flex-middle">
@@ -82,16 +82,16 @@
                             </div>
                         </div>
                         <div class="padding-horizontal-30">
-                            <h6 class="uk-margin-remove uk-text-bold cursor-pointer">¿Olvidaste tu contraseña?</h6>
+                            <h6 class="uk-margin-remove cursor-pointer">¿Olvidaste tu contraseña?</h6>
                         </div>
                         <div>
                             <button class="button-log-in-user-responsive-customers">Inicia Sesión</button>
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
             <!-- Contenido mis pedidos y mis pedidos activos -->
-            <div id="menu-orders-responsive-customers" class="background-menus-responsive-customers">
+            <!-- <div id="menu-orders-responsive-customers" class="background-menus-responsive-customers">
                 <div class="uk-flex uk-flex-center menu-my-orders-responsive-customers">
                     <div class="my-orders" style="margin-top: 20px;">
                         <h4 class="uk-margin-remove uk-text-bold color-blue" uk-toggle="target: .my-orders">Mis pedidos</h4>
@@ -186,17 +186,20 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="uk-flex uk-flex-center">
                 <input class="input-search-product-responsive-customers" type="text" placeholder="Busca tu producto">
             </div>
             <!-- Contenido inicio de sesion de usuario -->
         </div>
-        <div class="uk-flex uk-flex-middle">
-            <div class="button-select-search-cat-responsive-customers uk-box-shadow-hover-large uk-flex uk-flex-middle uk-flex-center">
-                <button onclick="openMenuResponsiveCustomers('categories-responsive-customers')" class="uk-text-capitalize uk-text-bold uk-button uk-button-default button-search-cat-responsive-customers">Zapatos</button>
+        <div class="uk-flex uk-flex-middle" style="margin-top: 13px; margin-left: 25px; margin-bottom: 20px;">
+            <div>
+                <button onclick="openMenuResponsiveCustomers('categories-responsive-customers')" class="uk-text-capitalize uk-text-bold button-search-cat-responsive-customers">Zapatos</button>
             </div>
-            <div class="button-select-search-cat-responsive-customers uk-box-shadow-hover-large uk-flex uk-flex-middle uk-flex-center" style="width: 170px; position: relative;">
+            <div style="margin-left: 8px;">
+                <h6 class="font-size-11 uk-margin-remove">LaFerra>Tienda</h6>
+            </div>
+            <div style="position: relative; margin-left: 25px;">
                 <div class="uk-flex uk-flex-middle uk-flex-around button-bag-complete-order-responsive-customers">
                     <div>
                         <h6 class="uk-margin-remove uk-text-bold font-size-11">0$</h6>
@@ -210,6 +213,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="box-shadow-bottom">
         </div>
         <div id="menu-categories-responsive-customers" class="background-menus-responsive-customers">
             <div class="uk-margin-remove-right style-menu-categories-responsive-customers">
@@ -262,7 +267,6 @@
         </div>
         <!-- contenido de agregar producto -->
         <div style="padding: 20px; padding-top: 0px !important;">
-            <h6 class="uk-margin-remove uk-text-muted">Zapatos > Mocacines > Mocacines Formales</h6>
             <h3 class="uk-text-bold uk-margin-remove" style="padding-top: 5px;">Mocacines</h3>
             <div class="uk-flex " style="margin-top: 5px;">
                 <div class="uk-width-1-3" style="position: relative;">
@@ -279,7 +283,7 @@
                     </div>
                 </div>
                 <div class="uk-width-1-3 uk-width-1-3 uk-flex uk-flex-middle ">
-                    <button class="uk-text-capitalize uk-text-bold uk-button uk-button-default button-add-responsive-customers uk-box-shadow-large ">Agregar</button>
+                    <button class="uk-text-capitalize uk-text-bold button-add-responsive-customers uk-box-shadow-large ">Agregar</button>
                 </div>
             </div>
             <div class="uk-flex " style="margin-top: 5px; ">
@@ -297,7 +301,7 @@
                     </div>
                 </div>
                 <div class="uk-width-1-3 uk-width-1-3 uk-flex uk-flex-middle ">
-                    <button class="uk-text-capitalize uk-text-bold uk-button uk-button-default buttom-add-responsive-customers uk-box-shadow-large ">Agregar</button>
+                    <button class="uk-text-capitalize uk-text-bold button-add-responsive-customers uk-box-shadow-large ">Agregar</button>
                 </div>
             </div>
             <div class="uk-flex " style="margin-top: 5px; ">
@@ -318,7 +322,7 @@
                     </div>
                 </div>
                 <div class="uk-width-1-3 uk-width-1-3 uk-flex uk-flex-middle ">
-                    <button class="uk-text-capitalize uk-text-bold uk-button uk-button-default buttom-add-responsive-customers uk-box-shadow-large">Agregar</button>
+                    <button class="uk-text-capitalize uk-text-bold button-add-responsive-customers uk-box-shadow-large ">Agregar</button>
                 </div>
             </div>
             <div class="uk-flex " style="margin-top: 5px; ">
@@ -339,7 +343,7 @@
                     </div>
                 </div>
                 <div class="uk-width-1-3 uk-width-1-3 uk-flex uk-flex-middle ">
-                    <button class="uk-text-capitalize uk-text-bold uk-button uk-button-default buttom-add-responsive-customers uk-box-shadow-large ">Agregar</button>
+                    <button class="uk-text-capitalize uk-text-bold button-add-responsive-customers uk-box-shadow-large ">Agregar</button>
                 </div>
             </div>
         </div>
@@ -348,37 +352,19 @@
     <div style="display: none;">
         <!--Navbar gallery-->
         <div class="uk-flex uk-flex-middle uk-flex-between padding-horizontal-10" style="margin-top: 15px;">
-            <div>
-                <img class="icons-view-gallery-top-responsive-customers" src="./data/icono-x.png" alt="">
-            </div>
             <div class="uk-flex uk-flex-middle">
                 <img class="icons-view-gallery-top-responsive-customers" src="./data/icono-compartir.png" style="margin-right: 5px;" alt="">
                 <img class="icons-view-gallery-top-responsive-customers" src="./data/icono-corazon.png" alt="">
             </div>
-        </div>
-        <div class="uk-flex uk-flex-between uk-flex-middle uk-box-shadow-medium" style="margin-top: 25px;">
             <div>
-                <img class="image-logo-store-responsive-customers" src="./data/logo2.png" alt="">
-            </div>
-            <div style="margin-right: 30px;">
-                <div class="uk-flex uk-flex-middle uk-flex-around button-bag-complete-order-responsive-customers">
-                    <div>
-                        <h6 class="uk-margin-remove uk-text-bold font-size-11">0$</h6>
-                    </div>
-                    <div class="hr-vertical"></div>
-                    <div>
-                        <a href="">
-                            <img class="image-bag-gallery-order-responsive-customers" src="./data/Canasta-inactivo.png" alt="">
-                            <h6 class="uk-margin-remove text-bag-gallery-order-responsive-customers">0</h6>
-                        </a>
-                    </div>
-                </div>
+                <img class="icons-view-gallery-top-responsive-customers" src="./data/icono-x.png" alt="">
             </div>
         </div>
         <div class="background-grey-galery-responsive-customers" style="position: relative;">
             <div style="padding: 30px;">
                 <div class="uk-flex uk-flex-middle">
-                    <h4 class="uk-margin-remove uk-text-bold" style="padding-right: 20px;">AK116BIS</h4>
+                    <i class="fas fa-caret-left color-black font-size-17"></i>
+                    <h4 class="uk-margin-remove uk-text-bold" style="padding-right: 20px; padding-left: 20px;">AK116BIS</h4>
                     <div class="uk-flex uk-flex-middle">
                         <i class="fas fa-star uk-margin-remove color-yellow-star"></i>
                         <i class="fas fa-star uk-margin-remove color-yellow-star padding-horizontal-5"></i>
@@ -439,11 +425,10 @@
                     </div>
                 </div>
                 <div style="padding-top: 30px;">
-                    <h3 class="uk-text-bold uk-margin-remove">150.000$</h3>
+                    <h3 class="uk-text-bold uk-margin-remove uk-text-center">150.000$</h3>
                 </div>
-                <div class="uk-flex uk-flex-middle uk-flex-around box-add-product-gallery-responsive-customers" style="margin-top: 30px;">
-                    <h5 class="uk-margin-remove uk-text-bold">Añadir</h5>
-                    <img class="size-shopping-bag-responsive-customers uk-margin-remove" src="./data/Canasta-inactivo.png" alt="">
+                <div class="uk-flex uk-flex-middle uk-align-center uk-flex-around box-add-product-gallery-responsive-customers" style="margin-top: 30px;">
+                    <h5 class="uk-margin-remove uk-text-bold font-size-18">Añadir</h5>
                 </div>
                 <div style="padding: 10px;">
                     <ul class="uk-list uk-list-disc" style="padding-top: 20px;">
@@ -458,7 +443,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="uk-margin-remove">Productos relacionados</h4>
+                    <h4 class="uk-margin-remove font-weight-500">Productos relacionados</h4>
                     <div class="uk-flex uk-flex-around" style="margin-top: 20px;">
                         <div>
                             <div class="img-items-gallery-relation-responsive-customers cursor-pointer" style="background-image: url(./data/shoes1.png); " uk-img></div>
@@ -710,7 +695,7 @@
             </div>
         </div>
     </div>
-    <!-- Vista de Canasta de compras -->
+    <!-- Vista de Canasta de compras PENDIENTE NAVBAR CATEGORIAS-->
     <div style="display: none;">
         <!-- navbar -->
         <div class="navbar-view-main-responsive-customers">
@@ -1150,7 +1135,7 @@
         </div>
     </div>
     <!-- Vista del boton de metodos de pago -->
-    <div style="display: none;">
+    <div style="display: inline;">
         <div>
             <div class="uk-flex uk-flex-middle" style="padding-top: 40px; margin-left: 40px;">
                 <i class="fas fa-caret-left font-size-35" style="margin-right: 40px;"></i>
