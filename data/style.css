@@ -643,8 +643,10 @@
 }
 
 .icon-close-basket-responsive-customers {
-    width: 35px;
-    height: 35px;
+    background-color: #FFF58D;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
 }
 
 .img-items-products-basket-responsive-customers {
@@ -660,10 +662,10 @@
 .box-discount-basket-responsive-customers {
     background-color: black;
     color: white;
-    border-radius: 20px;
-    bottom: 110px;
+    border-radius: 5px;
+    bottom: 105px;
     left: 5px;
-    height: 20px;
+    height: 22px;
     width: 60px;
     font-size: 14px;
 }
@@ -676,8 +678,8 @@
 .like-size-basket-responsive-customers {
     top: 90px;
     left: 90px;
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
 }
 
 .button-complete-basket-responsive-customers {
