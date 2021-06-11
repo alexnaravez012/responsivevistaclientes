@@ -705,9 +705,9 @@
 .box-discount-complete-order-responsive-customers {
     background-color: black;
     color: white;
-    border-radius: 20px;
+    border-radius: 5px;
     bottom: 85px;
-    right: 85px;
+    right: 95px;
     height: 20px;
     width: 50px;
     font-size: 14px;
@@ -729,10 +729,10 @@
     border: none;
     background-color: #FBF38C;
     height: 45px;
-    width: 280px;
+    width: 100%;
     font-size: 17px;
     font-weight: 600;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .padding-vertical-5 {
@@ -784,8 +784,8 @@
 }
 
 .input-add-card-responsive-customers {
-    width: 330px;
-    height: 50px;
+    width: 130px;
+    height: 40px;
     border: 1px solid rgb(161, 161, 161);
     border-radius: 5px;
     padding-left: 10px;

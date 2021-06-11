@@ -1009,34 +1009,232 @@
         </div>
     </div>
     <!-- Vista del proceso de compra -->
-    <div style="display: inline;">
-        <div style="padding: 40px;">
-            <div class="uk-flex uk-flex-middle">
-                <i class="fas fa-caret-left font-size-35" style="margin-right: 40px;"></i>
-                <h2 class="uk-margin-remove uk-text-bold">Completa tu pedido</h2>
+    <div style="display: none;">
+        <!-- navbar -->
+        <div class="navbar-view-main-responsive-customers">
+            <div class="uk-flex uk-flex-middle uk-flex-between">
+                <div class="uk-flex uk-flex-middle cursor-pointer" style="padding-left: 20px;" href="#">
+                    <i class="fas fa-caret-left font-size-35"></i>
+                    <img class="image-logo-store-responsive-customers" src="./data/logo2.png" alt="">
+                </div>
+                <div class="uk-flex uk-flex-middle" style="padding-right: 30px;">
+                    <div style="margin-right: 5px;">
+                        <button class="button-navbar-filter-responsive-customers" type="button" uk-toggle="target: .filter-responsive-active">
+                            <img class="image-filter-responsive-customers filter-responsive-active" src="./data/filtro-inactivo.png " alt=" " uk-img>
+                            <img class="image-filter-responsive-customers filter-responsive-active" src="./data/filtro-activo.png " alt=" " uk-img hidden>
+                        </button>
+                    </div>
+                    <!-- boton inico de sesion  -->
+                    <div>
+                        <button onclick="openMenuResponsiveCustomers('log-in-user-responsive-customers')" class="button-user-responsive-customers" type="button" uk-toggle="target: .user-responsive-active">
+                            <img class="image-user-responsive-customers user-responsive-active" src="./data/usuario-inactivo.png" alt=" " uk-img>
+                            <img class="image-user-responsive-customers user-responsive-active" src="./data/usuario-activo.png " alt=" " uk-img hidden>
+                        </button>
+                    </div>
+                    <!-- boton mis pedidos  -->
+                    <!-- <div>
+                        <button onclick="openMenuResponsiveCustomers('orders-responsive-customers')" class="button-user-responsive-customers" type="button" uk-toggle="target: .user-responsive-active">
+                            <img class="image-user-responsive-customers user-responsive-active" src="./data/usuario-inactivo.png" alt=" " uk-img>
+                            <img class="image-user-responsive-customers user-responsive-active" src="./data/usuario-activo.png " alt=" " uk-img hidden>
+                        </button>
+                    </div> -->
+                </div>
             </div>
-            <div style="margin-top: 20px;">
-                <img style="height: 90px; width:170px ;" src="./data/logo2.png" alt="">
-            </div>
-            <div class="uk-flex uk-flex-around">
-                <div style="padding-top: 20px; ">
-                    <div style="position: relative; ">
-                        <div class="image-items-complete-order-responsive-customers" style="background-image: url(./data/shoes1.png); " uk-img></div>
-                        <h6 class="box-discount-complete-order-responsive-customers uk-flex uk-flex-middle uk-flex-center " style="position: absolute; ">-25%</h6>
-                        <div uk-toggle="target: .like-active-complete-order-responsive-customers">
-                            <img class="like-size-complete-order-responsive-customers like-active-complete-order-responsive-customers" style="position: absolute;" src="./data/Like-activado.png " alt=" " hidden>
-                            <img class="like-size-complete-order-responsive-customers like-active-complete-order-responsive-customers" style="position: absolute;" src="./data/Like-desactivado.png " alt=" ">
+            <div id="menu-log-in-responsive-customers" class="background-menus-responsive-customers">
+                <div class="style-menu-log-in-responsive-customers">
+                    <div class="uk-flex uk-flex-middle uk-flex-around">
+                        <button class="button-select-log-in-responsive-customers uk-width-1-2 uk-flex uk-flex-center uk-flex-middle">
+                            <h4 class="uk-margin-remove uk-text-bold">Inicia Sesión</h4>
+                        </button>
+                        <button class="button-select-record-responsive-customers uk-width-1-2 uk-flex uk-flex-center uk-flex-middle">
+                            <h4 class="uk-margin-remove uk-text-bold">Registrarse</h4>
+                        </button>
+                    </div>
+                    <div>
+                        <div class="uk-flex uk-flex-center" style="margin-bottom:20px ;">
+                            <div>
+                                <div style="margin-top: 20px;">
+                                    <h5 class="uk-margin-remove uk-text-bold">Correo Electrónico</h5>
+                                    <input class="input-log-in-responsive-customers" type="text">
+                                </div>
+                                <div style="margin-top: 20px;">
+                                    <h5 class="uk-margin-remove uk-text-bold">Contraseña</h5>
+                                    <div style="position: relative;">
+                                        <div>
+                                            <input class="input-log-in-responsive-customers" type="text">
+                                        </div>
+                                        <div uk-toggle="target: .view-password-active">
+                                            <i class="far fa-eye-slash view-password-active icon-view-password-responsive-customers"></i>
+                                            <i class="far fa-eye view-password-active icon-view-password-responsive-customers" hidden></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h5 class="uk-margin-remove" style="position: absolute; top: 130px; left: 10px;">1 Producto</h5>
+                        <div class="padding-horizontal-30">
+                            <h6 class="uk-margin-remove cursor-pointer">¿Olvidaste tu contraseña?</h6>
+                        </div>
+                        <div>
+                            <button class="button-log-in-user-responsive-customers">Inicia Sesión</button>
+                        </div>
                     </div>
                 </div>
-                <div class="uk-margin-remove" style="padding-top: 50px;">
-                    <h5 class="uk-margin-remove uk-text-bold width-200">EDERA SPORT MONACO</h5>
-                    <h5 class="uk-margin-remove" style="padding-top: 10px; ">75,000$</h5>
+            </div>
+            <!-- Contenido mis pedidos y mis pedidos activos -->
+            <!-- <div id="menu-orders-responsive-customers" class="background-menus-responsive-customers">
+                <div class="uk-flex uk-flex-center menu-my-orders-responsive-customers">
+                    <div class="my-orders" style="margin-top: 20px;">
+                        <h4 class="uk-margin-remove uk-text-bold color-blue" uk-toggle="target: .my-orders">Mis pedidos</h4>
+                        <h4 class="uk-margin-remove" style="padding-top: 15px;">Cerrar Sesión</h4>
+                    </div>
+                    <div class="my-orders menu-my-orders-active-responsive-customers" hidden>
+                        <div class="navbar-menu-orders-responsive-customers">
+                            <div class="uk-flex uk-flex-middle" style="margin-left:30px ; margin-top: 20px;" uk-toggle="target: .my-orders">
+                                <i class="fas fa-caret-left cursor-pointer color-blue" style="font-size: 25px; padding-right: 10px;"></i>
+                                <h4 class="uk-margin-remove uk-text-bold color-blue" style="padding-left: 15px;">Mis Pedidos</h4>
+                            </div>
+                            <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 15px;">
+                                <button class="buttons-menu-orders-responsive-customers uk-text-bold uk-text-center">Activos</button>
+                                <button class="buttons-menu-orders-responsive-customers uk-text-bold uk-text-center">Finalizados</button>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-center">
+                            <div>
+                                <div class="padding-horizontal-10">
+                                    <div class="card-menu-orders-responsive-customers">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between" style="margin-bottom: 58px;">
+                                            <div>
+                                                <h6 class="uk-margin-remove font-size-14 font-weight-500">PP--3</h6>
+                                                <h6 class="uk-margin-remove font-size-13">Nº Pedido</h6>
+                                            </div>
+                                            <div class="uk-text-center">
+                                                <h6 class="uk-margin-remove font-size-14 font-weight-500">2020-06-26</h6>
+                                                <h6 class="uk-margin-remove cursor-pointer color-blue font-size-13 font-weight-500">Recibido</h6>
+                                            </div>
+                                            <div>
+                                                <h6 class="font-size-14 font-weight-500">10:37AM</h6>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="hr-tab"></div>
+                                        </div>
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <h6 class="uk-margin-remove font-size-14 font-weight-500">Calificar</h6>
+                                            <h6 class="uk-margin-remove font-size-14 font-weight-500">Repetir Pedido</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="padding-horizontal-10">
+                                    <div class="card-menu-orders-responsive-customers">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between" style="margin-bottom: 58px;">
+                                            <div>
+                                                <h6 class="uk-margin-remove font-size-14 font-weight-500">PP--3</h6>
+                                                <h6 class="uk-margin-remove font-size-13">Nº Pedido</h6>
+                                            </div>
+                                            <div class="uk-text-center">
+                                                <h6 class="uk-margin-remove font-size-14 font-weight-500">2020-06-26</h6>
+                                                <h6 class="uk-margin-remove cursor-pointer color-blue font-size-13 font-weight-500">Recibido</h6>
+                                            </div>
+                                            <div>
+                                                <h6 class="font-size-14 font-weight-500">10:37AM</h6>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="hr-tab"></div>
+                                        </div>
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <h6 class="uk-margin-remove font-size-14 font-weight-500">Calificar</h6>
+                                            <h6 class="uk-margin-remove font-size-14 font-weight-500">Repetir Pedido</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="padding-horizontal-10">
+                                    <div class="card-menu-orders-responsive-customers">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between" style="margin-bottom: 58px;">
+                                            <div>
+                                                <h6 class="uk-margin-remove font-size-14 font-weight-500">PP--3</h6>
+                                                <h6 class="uk-margin-remove font-size-13">Nº Pedido</h6>
+                                            </div>
+                                            <div class="uk-text-center">
+                                                <h6 class="uk-margin-remove font-size-14 font-weight-500">2020-06-26</h6>
+                                                <h6 class="uk-margin-remove cursor-pointer color-blue font-size-13 font-weight-500">Recibido</h6>
+                                            </div>
+                                            <div>
+                                                <h6 class="font-size-14 font-weight-500">10:37AM</h6>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="hr-tab"></div>
+                                        </div>
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <h6 class="uk-margin-remove font-size-14 font-weight-500">Calificar</h6>
+                                            <h6 class="uk-margin-remove font-size-14 font-weight-500">Repetir Pedido</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="uk-flex uk-flex-center">
+                <input class="input-search-product-responsive-customers" type="text" placeholder="Busca tu producto">
+            </div>
+            <!-- Contenido inicio de sesion de usuario -->
+        </div>
+        <div class="uk-flex uk-flex-middle" style="margin-top: 13px; margin-left: 25px; margin-bottom: 20px;">
+            <div>
+                <button onclick="openMenuResponsiveCustomers('categories-responsive-customers')" class="uk-text-capitalize uk-text-bold button-search-cat-responsive-customers">Zapatos</button>
+            </div>
+            <div style="margin-left: 8px;">
+                <h6 class="font-size-11 uk-margin-remove">LaFerra>Tienda</h6>
+            </div>
+            <div style="position: relative; margin-left: 25px;">
+                <div class="uk-flex uk-flex-middle uk-flex-around button-bag-complete-order-responsive-customers">
+                    <div>
+                        <h6 class="uk-margin-remove uk-text-bold font-size-11">0$</h6>
+                    </div>
+                    <div class="hr-vertical"></div>
+                    <div>
+                        <a href="">
+                            <img class="image-bag-complete-order-responsive-customers" src="./data/Canasta-inactivo.png" alt="">
+                            <h6 class="uk-margin-remove text-bag-complete-order-main-responsive-customers">0</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-shadow-bottom">
+        </div>
+        <div style="padding-top: 20px;">
+            <div style="padding-right: 30px; padding-left: 30px;">
+                <div class="uk-flex uk-flex-middle">
+                    <i class="fas fa-caret-left font-size-35" style="margin-right: 40px;"></i>
+                    <h2 class="uk-margin-remove uk-text-bold">Completa tu pedido</h2>
+                </div>
+                <div style="margin-top: 20px; margin-bottom: 10px;">
+                    <img style="height: 85px; width:170px ;" src="./data/logo2.png" alt="">
+                </div>
+                <div class="uk-flex uk-flex-around">
+                    <div>
+                        <div style="position: relative;">
+                            <div class="image-items-complete-order-responsive-customers" style="background-image: url(./data/shoes1.png); " uk-img></div>
+                            <h6 class="box-discount-complete-order-responsive-customers uk-flex uk-flex-middle uk-flex-center " style="position: absolute; ">-25%</h6>
+                            <div uk-toggle="target: .like-active-complete-order-responsive-customers">
+                                <img class="like-size-complete-order-responsive-customers like-active-complete-order-responsive-customers" style="position: absolute;" src="./data/Like-activado.png " alt=" " hidden>
+                                <img class="like-size-complete-order-responsive-customers like-active-complete-order-responsive-customers" style="position: absolute;" src="./data/Like-desactivado.png " alt=" ">
+                            </div>
+                            <h5 class="uk-margin-remove" style="position: absolute; top: 130px; left: 10px;">1 Producto</h5>
+                        </div>
+                    </div>
+                    <div class="uk-margin-remove" style="padding-top: 50px;">
+                        <h5 class="uk-margin-remove uk-text-bold width-200">EDERA SPORT MONACO</h5>
+                        <h5 class="uk-margin-remove" style="padding-top: 10px; ">75,000$</h5>
+                    </div>
                 </div>
             </div>
             <div style="margin-top: 60px;">
-                <div>
+                <div style="padding-right: 30px; padding-left: 30px;">
                     <div class="uk-flex uk-flex-middle uk-flex-between">
                         <h5 class="uk-margin-remove uk-text-bold font-size-16">Metodo de pago:</h5>
                         <button class="button-change-complete-order-respomsive-customers">Cambiar</button>
@@ -1050,7 +1248,7 @@
                         <h5 class="uk-margin-remove uk-text-bold" style="color: rgb(105, 105, 105);">0$</h5>
                     </div>
                 </div>
-                <div style="margin-top: 30px;">
+                <div style="margin-top: 30px; padding-right: 30px; padding-left: 30px;">
                     <div class="uk-flex uk-flex-middle uk-flex-between">
                         <h5 class="uk-margin-remove uk-text-bold font-size-16">¿Tienes un cupon?</h5>
                         <button class="button-change-complete-order-respomsive-customers">Ingresar</button>
@@ -1059,7 +1257,7 @@
                         <h5 class="uk-margin-remove" style="color: rgb(105, 105, 105);">Ingresar cupón</h5>
                     </div>
                 </div>
-                <div style="margin-top: 30px;">
+                <div style="margin-top: 30px; padding-right: 30px; padding-left: 30px;">
                     <div class="uk-flex uk-flex-middle uk-flex-between">
                         <h5 class="uk-margin-remove uk-text-bold font-size-16">Dirección de entrega:</h5>
                         <h5 class="uk-margin-remove font-size-15" style="color: #3AB048; font-weight: 700; padding-right: 10px;">Cambiar</h5>
@@ -1073,7 +1271,7 @@
                         <h5 class="uk-margin-remove uk-text-bold" style="color: rgb(105, 105, 105);">33 - 48 mins</h5>
                     </div>
                 </div>
-                <div style="margin-top: 60px;">
+                <div style="margin-top: 60px; padding-right: 30px; padding-left: 30px;">
                     <div class="uk-flex uk-flex-middle uk-flex-between">
                         <h5 class="uk-margin-remove uk-text-bold font-size-16">Resumen</h5>
                         <button class="button-change-complete-order-respomsive-customers" style="">Resumen extendido</button>
@@ -1091,9 +1289,9 @@
                         <h5 class="uk-margin-remove uk-text-bold" style="color: rgb(105, 105, 105);">$0</h5>
                     </div>
                 </div>
-                <div class="uk-flex uk-flex-middle uk-flex-between padding-horizontal-20" style="margin-top: 20px;">
-                    <h4 class="uk-margin-remove uk-text-bold">Total</h4>
-                    <h4 class="uk-margin-remove uk-text-bold">$9.500</h4>
+                <div class="uk-flex uk-flex-middle uk-flex-between padding-horizontal-20" style="margin-top: 20px; padding-right: 30px; padding-left: 30px;">
+                    <h3 class="uk-margin-remove uk-text-bold">Total</h3>
+                    <h3 class="uk-margin-remove uk-text-bold">$9.500</h3>
                 </div>
                 <div class="uk-flex uk-flex-center">
                     <button class="button-make-to-order-responsive-customers">Hacer pedido</button>
@@ -1103,6 +1301,202 @@
     </div>
     <!-- Vista del boton de metodos de pago -->
     <div style="display: none;">
+        <!-- navbar -->
+        <div class="navbar-view-main-responsive-customers">
+            <div class="uk-flex uk-flex-middle uk-flex-between">
+                <div class="uk-flex uk-flex-middle cursor-pointer" style="padding-left: 20px;" href="#">
+                    <i class="fas fa-caret-left font-size-35"></i>
+                    <img class="image-logo-store-responsive-customers" src="./data/logo2.png" alt="">
+                </div>
+                <div class="uk-flex uk-flex-middle" style="padding-right: 30px;">
+                    <div style="margin-right: 5px;">
+                        <button class="button-navbar-filter-responsive-customers" type="button" uk-toggle="target: .filter-responsive-active">
+                            <img class="image-filter-responsive-customers filter-responsive-active" src="./data/filtro-inactivo.png " alt=" " uk-img>
+                            <img class="image-filter-responsive-customers filter-responsive-active" src="./data/filtro-activo.png " alt=" " uk-img hidden>
+                        </button>
+                    </div>
+                    <!-- boton inico de sesion  -->
+                    <div>
+                        <button onclick="openMenuResponsiveCustomers('log-in-user-responsive-customers')" class="button-user-responsive-customers" type="button" uk-toggle="target: .user-responsive-active">
+                            <img class="image-user-responsive-customers user-responsive-active" src="./data/usuario-inactivo.png" alt=" " uk-img>
+                            <img class="image-user-responsive-customers user-responsive-active" src="./data/usuario-activo.png " alt=" " uk-img hidden>
+                        </button>
+                    </div>
+                    <!-- boton mis pedidos  -->
+                    <!-- <div>
+                        <button onclick="openMenuResponsiveCustomers('orders-responsive-customers')" class="button-user-responsive-customers" type="button" uk-toggle="target: .user-responsive-active">
+                            <img class="image-user-responsive-customers user-responsive-active" src="./data/usuario-inactivo.png" alt=" " uk-img>
+                            <img class="image-user-responsive-customers user-responsive-active" src="./data/usuario-activo.png " alt=" " uk-img hidden>
+                        </button>
+                    </div> -->
+                </div>
+            </div>
+            <div id="menu-log-in-responsive-customers" class="background-menus-responsive-customers">
+                <div class="style-menu-log-in-responsive-customers">
+                    <div class="uk-flex uk-flex-middle uk-flex-around">
+                        <button class="button-select-log-in-responsive-customers uk-width-1-2 uk-flex uk-flex-center uk-flex-middle">
+                            <h4 class="uk-margin-remove uk-text-bold">Inicia Sesión</h4>
+                        </button>
+                        <button class="button-select-record-responsive-customers uk-width-1-2 uk-flex uk-flex-center uk-flex-middle">
+                            <h4 class="uk-margin-remove uk-text-bold">Registrarse</h4>
+                        </button>
+                    </div>
+                    <div>
+                        <div class="uk-flex uk-flex-center" style="margin-bottom:20px ;">
+                            <div>
+                                <div style="margin-top: 20px;">
+                                    <h5 class="uk-margin-remove uk-text-bold">Correo Electrónico</h5>
+                                    <input class="input-log-in-responsive-customers" type="text">
+                                </div>
+                                <div style="margin-top: 20px;">
+                                    <h5 class="uk-margin-remove uk-text-bold">Contraseña</h5>
+                                    <div style="position: relative;">
+                                        <div>
+                                            <input class="input-log-in-responsive-customers" type="text">
+                                        </div>
+                                        <div uk-toggle="target: .view-password-active">
+                                            <i class="far fa-eye-slash view-password-active icon-view-password-responsive-customers"></i>
+                                            <i class="far fa-eye view-password-active icon-view-password-responsive-customers" hidden></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding-horizontal-30">
+                            <h6 class="uk-margin-remove cursor-pointer">¿Olvidaste tu contraseña?</h6>
+                        </div>
+                        <div>
+                            <button class="button-log-in-user-responsive-customers">Inicia Sesión</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contenido mis pedidos y mis pedidos activos -->
+            <!-- <div id="menu-orders-responsive-customers" class="background-menus-responsive-customers">
+                <div class="uk-flex uk-flex-center menu-my-orders-responsive-customers">
+                    <div class="my-orders" style="margin-top: 20px;">
+                        <h4 class="uk-margin-remove uk-text-bold color-blue" uk-toggle="target: .my-orders">Mis pedidos</h4>
+                        <h4 class="uk-margin-remove" style="padding-top: 15px;">Cerrar Sesión</h4>
+                    </div>
+                    <div class="my-orders menu-my-orders-active-responsive-customers" hidden>
+                        <div class="navbar-menu-orders-responsive-customers">
+                            <div class="uk-flex uk-flex-middle" style="margin-left:30px ; margin-top: 20px;" uk-toggle="target: .my-orders">
+                                <i class="fas fa-caret-left cursor-pointer color-blue" style="font-size: 25px; padding-right: 10px;"></i>
+                                <h4 class="uk-margin-remove uk-text-bold color-blue" style="padding-left: 15px;">Mis Pedidos</h4>
+                            </div>
+                            <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 15px;">
+                                <button class="buttons-menu-orders-responsive-customers uk-text-bold uk-text-center">Activos</button>
+                                <button class="buttons-menu-orders-responsive-customers uk-text-bold uk-text-center">Finalizados</button>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-center">
+                            <div>
+                                <div class="padding-horizontal-10">
+                                    <div class="card-menu-orders-responsive-customers">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between" style="margin-bottom: 58px;">
+                                            <div>
+                                                <h6 class="uk-margin-remove font-size-14 font-weight-500">PP--3</h6>
+                                                <h6 class="uk-margin-remove font-size-13">Nº Pedido</h6>
+                                            </div>
+                                            <div class="uk-text-center">
+                                                <h6 class="uk-margin-remove font-size-14 font-weight-500">2020-06-26</h6>
+                                                <h6 class="uk-margin-remove cursor-pointer color-blue font-size-13 font-weight-500">Recibido</h6>
+                                            </div>
+                                            <div>
+                                                <h6 class="font-size-14 font-weight-500">10:37AM</h6>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="hr-tab"></div>
+                                        </div>
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <h6 class="uk-margin-remove font-size-14 font-weight-500">Calificar</h6>
+                                            <h6 class="uk-margin-remove font-size-14 font-weight-500">Repetir Pedido</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="padding-horizontal-10">
+                                    <div class="card-menu-orders-responsive-customers">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between" style="margin-bottom: 58px;">
+                                            <div>
+                                                <h6 class="uk-margin-remove font-size-14 font-weight-500">PP--3</h6>
+                                                <h6 class="uk-margin-remove font-size-13">Nº Pedido</h6>
+                                            </div>
+                                            <div class="uk-text-center">
+                                                <h6 class="uk-margin-remove font-size-14 font-weight-500">2020-06-26</h6>
+                                                <h6 class="uk-margin-remove cursor-pointer color-blue font-size-13 font-weight-500">Recibido</h6>
+                                            </div>
+                                            <div>
+                                                <h6 class="font-size-14 font-weight-500">10:37AM</h6>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="hr-tab"></div>
+                                        </div>
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <h6 class="uk-margin-remove font-size-14 font-weight-500">Calificar</h6>
+                                            <h6 class="uk-margin-remove font-size-14 font-weight-500">Repetir Pedido</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="padding-horizontal-10">
+                                    <div class="card-menu-orders-responsive-customers">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between" style="margin-bottom: 58px;">
+                                            <div>
+                                                <h6 class="uk-margin-remove font-size-14 font-weight-500">PP--3</h6>
+                                                <h6 class="uk-margin-remove font-size-13">Nº Pedido</h6>
+                                            </div>
+                                            <div class="uk-text-center">
+                                                <h6 class="uk-margin-remove font-size-14 font-weight-500">2020-06-26</h6>
+                                                <h6 class="uk-margin-remove cursor-pointer color-blue font-size-13 font-weight-500">Recibido</h6>
+                                            </div>
+                                            <div>
+                                                <h6 class="font-size-14 font-weight-500">10:37AM</h6>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="hr-tab"></div>
+                                        </div>
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <h6 class="uk-margin-remove font-size-14 font-weight-500">Calificar</h6>
+                                            <h6 class="uk-margin-remove font-size-14 font-weight-500">Repetir Pedido</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="uk-flex uk-flex-center">
+                <input class="input-search-product-responsive-customers" type="text" placeholder="Busca tu producto">
+            </div>
+            <!-- Contenido inicio de sesion de usuario -->
+        </div>
+        <div class="uk-flex uk-flex-middle" style="margin-top: 13px; margin-left: 25px; margin-bottom: 20px;">
+            <div>
+                <button onclick="openMenuResponsiveCustomers('categories-responsive-customers')" class="uk-text-capitalize uk-text-bold button-search-cat-responsive-customers">Zapatos</button>
+            </div>
+            <div style="margin-left: 8px;">
+                <h6 class="font-size-11 uk-margin-remove">LaFerra>Tienda</h6>
+            </div>
+            <div style="position: relative; margin-left: 25px;">
+                <div class="uk-flex uk-flex-middle uk-flex-around button-bag-complete-order-responsive-customers">
+                    <div>
+                        <h6 class="uk-margin-remove uk-text-bold font-size-11">0$</h6>
+                    </div>
+                    <div class="hr-vertical"></div>
+                    <div>
+                        <a href="">
+                            <img class="image-bag-complete-order-responsive-customers" src="./data/Canasta-inactivo.png" alt="">
+                            <h6 class="uk-margin-remove text-bag-complete-order-main-responsive-customers">0</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-shadow-bottom">
+        </div>
         <div>
             <div class="uk-flex uk-flex-middle" style="padding-top: 40px; margin-left: 40px;">
                 <i class="fas fa-caret-left font-size-35" style="margin-right: 40px;"></i>
@@ -1158,53 +1552,240 @@
         </div>
     </div>
     <!-- Vista del boton de tarjeta -->
-    <div style="display: none;">
+    <div style="display: inline;">
+        <!-- navbar -->
+        <div class="navbar-view-main-responsive-customers">
+            <div class="uk-flex uk-flex-middle uk-flex-between">
+                <div class="uk-flex uk-flex-middle cursor-pointer" style="padding-left: 20px;" href="#">
+                    <i class="fas fa-caret-left font-size-35"></i>
+                    <img class="image-logo-store-responsive-customers" src="./data/logo2.png" alt="">
+                </div>
+                <div class="uk-flex uk-flex-middle" style="padding-right: 30px;">
+                    <div style="margin-right: 5px;">
+                        <button class="button-navbar-filter-responsive-customers" type="button" uk-toggle="target: .filter-responsive-active">
+                            <img class="image-filter-responsive-customers filter-responsive-active" src="./data/filtro-inactivo.png " alt=" " uk-img>
+                            <img class="image-filter-responsive-customers filter-responsive-active" src="./data/filtro-activo.png " alt=" " uk-img hidden>
+                        </button>
+                    </div>
+                    <!-- boton inico de sesion  -->
+                    <div>
+                        <button onclick="openMenuResponsiveCustomers('log-in-user-responsive-customers')" class="button-user-responsive-customers" type="button" uk-toggle="target: .user-responsive-active">
+                            <img class="image-user-responsive-customers user-responsive-active" src="./data/usuario-inactivo.png" alt=" " uk-img>
+                            <img class="image-user-responsive-customers user-responsive-active" src="./data/usuario-activo.png " alt=" " uk-img hidden>
+                        </button>
+                    </div>
+                    <!-- boton mis pedidos  -->
+                    <!-- <div>
+                        <button onclick="openMenuResponsiveCustomers('orders-responsive-customers')" class="button-user-responsive-customers" type="button" uk-toggle="target: .user-responsive-active">
+                            <img class="image-user-responsive-customers user-responsive-active" src="./data/usuario-inactivo.png" alt=" " uk-img>
+                            <img class="image-user-responsive-customers user-responsive-active" src="./data/usuario-activo.png " alt=" " uk-img hidden>
+                        </button>
+                    </div> -->
+                </div>
+            </div>
+            <div id="menu-log-in-responsive-customers" class="background-menus-responsive-customers">
+                <div class="style-menu-log-in-responsive-customers">
+                    <div class="uk-flex uk-flex-middle uk-flex-around">
+                        <button class="button-select-log-in-responsive-customers uk-width-1-2 uk-flex uk-flex-center uk-flex-middle">
+                            <h4 class="uk-margin-remove uk-text-bold">Inicia Sesión</h4>
+                        </button>
+                        <button class="button-select-record-responsive-customers uk-width-1-2 uk-flex uk-flex-center uk-flex-middle">
+                            <h4 class="uk-margin-remove uk-text-bold">Registrarse</h4>
+                        </button>
+                    </div>
+                    <div>
+                        <div class="uk-flex uk-flex-center" style="margin-bottom:20px ;">
+                            <div>
+                                <div style="margin-top: 20px;">
+                                    <h5 class="uk-margin-remove uk-text-bold">Correo Electrónico</h5>
+                                    <input class="input-log-in-responsive-customers" type="text">
+                                </div>
+                                <div style="margin-top: 20px;">
+                                    <h5 class="uk-margin-remove uk-text-bold">Contraseña</h5>
+                                    <div style="position: relative;">
+                                        <div>
+                                            <input class="input-log-in-responsive-customers" type="text">
+                                        </div>
+                                        <div uk-toggle="target: .view-password-active">
+                                            <i class="far fa-eye-slash view-password-active icon-view-password-responsive-customers"></i>
+                                            <i class="far fa-eye view-password-active icon-view-password-responsive-customers" hidden></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="padding-horizontal-30">
+                            <h6 class="uk-margin-remove cursor-pointer">¿Olvidaste tu contraseña?</h6>
+                        </div>
+                        <div>
+                            <button class="button-log-in-user-responsive-customers">Inicia Sesión</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contenido mis pedidos y mis pedidos activos -->
+            <!-- <div id="menu-orders-responsive-customers" class="background-menus-responsive-customers">
+                <div class="uk-flex uk-flex-center menu-my-orders-responsive-customers">
+                    <div class="my-orders" style="margin-top: 20px;">
+                        <h4 class="uk-margin-remove uk-text-bold color-blue" uk-toggle="target: .my-orders">Mis pedidos</h4>
+                        <h4 class="uk-margin-remove" style="padding-top: 15px;">Cerrar Sesión</h4>
+                    </div>
+                    <div class="my-orders menu-my-orders-active-responsive-customers" hidden>
+                        <div class="navbar-menu-orders-responsive-customers">
+                            <div class="uk-flex uk-flex-middle" style="margin-left:30px ; margin-top: 20px;" uk-toggle="target: .my-orders">
+                                <i class="fas fa-caret-left cursor-pointer color-blue" style="font-size: 25px; padding-right: 10px;"></i>
+                                <h4 class="uk-margin-remove uk-text-bold color-blue" style="padding-left: 15px;">Mis Pedidos</h4>
+                            </div>
+                            <div class="uk-flex uk-flex-middle uk-flex-center" style="padding-top: 15px;">
+                                <button class="buttons-menu-orders-responsive-customers uk-text-bold uk-text-center">Activos</button>
+                                <button class="buttons-menu-orders-responsive-customers uk-text-bold uk-text-center">Finalizados</button>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-center">
+                            <div>
+                                <div class="padding-horizontal-10">
+                                    <div class="card-menu-orders-responsive-customers">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between" style="margin-bottom: 58px;">
+                                            <div>
+                                                <h6 class="uk-margin-remove font-size-14 font-weight-500">PP--3</h6>
+                                                <h6 class="uk-margin-remove font-size-13">Nº Pedido</h6>
+                                            </div>
+                                            <div class="uk-text-center">
+                                                <h6 class="uk-margin-remove font-size-14 font-weight-500">2020-06-26</h6>
+                                                <h6 class="uk-margin-remove cursor-pointer color-blue font-size-13 font-weight-500">Recibido</h6>
+                                            </div>
+                                            <div>
+                                                <h6 class="font-size-14 font-weight-500">10:37AM</h6>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="hr-tab"></div>
+                                        </div>
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <h6 class="uk-margin-remove font-size-14 font-weight-500">Calificar</h6>
+                                            <h6 class="uk-margin-remove font-size-14 font-weight-500">Repetir Pedido</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="padding-horizontal-10">
+                                    <div class="card-menu-orders-responsive-customers">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between" style="margin-bottom: 58px;">
+                                            <div>
+                                                <h6 class="uk-margin-remove font-size-14 font-weight-500">PP--3</h6>
+                                                <h6 class="uk-margin-remove font-size-13">Nº Pedido</h6>
+                                            </div>
+                                            <div class="uk-text-center">
+                                                <h6 class="uk-margin-remove font-size-14 font-weight-500">2020-06-26</h6>
+                                                <h6 class="uk-margin-remove cursor-pointer color-blue font-size-13 font-weight-500">Recibido</h6>
+                                            </div>
+                                            <div>
+                                                <h6 class="font-size-14 font-weight-500">10:37AM</h6>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="hr-tab"></div>
+                                        </div>
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <h6 class="uk-margin-remove font-size-14 font-weight-500">Calificar</h6>
+                                            <h6 class="uk-margin-remove font-size-14 font-weight-500">Repetir Pedido</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="padding-horizontal-10">
+                                    <div class="card-menu-orders-responsive-customers">
+                                        <div class="uk-flex uk-flex-middle uk-flex-between" style="margin-bottom: 58px;">
+                                            <div>
+                                                <h6 class="uk-margin-remove font-size-14 font-weight-500">PP--3</h6>
+                                                <h6 class="uk-margin-remove font-size-13">Nº Pedido</h6>
+                                            </div>
+                                            <div class="uk-text-center">
+                                                <h6 class="uk-margin-remove font-size-14 font-weight-500">2020-06-26</h6>
+                                                <h6 class="uk-margin-remove cursor-pointer color-blue font-size-13 font-weight-500">Recibido</h6>
+                                            </div>
+                                            <div>
+                                                <h6 class="font-size-14 font-weight-500">10:37AM</h6>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="hr-tab"></div>
+                                        </div>
+                                        <div class="uk-flex uk-flex-middle uk-flex-between">
+                                            <h6 class="uk-margin-remove font-size-14 font-weight-500">Calificar</h6>
+                                            <h6 class="uk-margin-remove font-size-14 font-weight-500">Repetir Pedido</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="uk-flex uk-flex-center">
+                <input class="input-search-product-responsive-customers" type="text" placeholder="Busca tu producto">
+            </div>
+            <!-- Contenido inicio de sesion de usuario -->
+        </div>
+        <div class="uk-flex uk-flex-middle" style="margin-top: 13px; margin-left: 25px; margin-bottom: 20px;">
+            <div>
+                <button onclick="openMenuResponsiveCustomers('categories-responsive-customers')" class="uk-text-capitalize uk-text-bold button-search-cat-responsive-customers">Zapatos</button>
+            </div>
+            <div style="margin-left: 8px;">
+                <h6 class="font-size-11 uk-margin-remove">LaFerra>Tienda</h6>
+            </div>
+            <div style="position: relative; margin-left: 25px;">
+                <div class="uk-flex uk-flex-middle uk-flex-around button-bag-complete-order-responsive-customers">
+                    <div>
+                        <h6 class="uk-margin-remove uk-text-bold font-size-11">0$</h6>
+                    </div>
+                    <div class="hr-vertical"></div>
+                    <div>
+                        <a href="">
+                            <img class="image-bag-complete-order-responsive-customers" src="./data/Canasta-inactivo.png" alt="">
+                            <h6 class="uk-margin-remove text-bag-complete-order-main-responsive-customers">0</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-shadow-bottom">
+        </div>
         <div style="padding: 40px;">
             <div class="uk-flex uk-flex-middle">
                 <i class="fas fa-caret-left font-size-35" style="margin-right: 40px;"></i>
                 <h2 class="uk-margin-remove uk-text-bold">Agregar tarjeta</h2>
             </div>
-            <div class="" style="margin-top: 30px;">
-                <h4 class="uk-margin-remove uk-text-muted uk-text-bold font-size-17">INFORMACIÓN DE FACTURACIÓN</h4>
-                <h5 class="uk-margin-remove uk-text-muted width-250">No se te hará ningún cargo hasta que realices una compra</h5>
-            </div>
             <div style="margin-top: 40px;">
-                <div>
-                    <h5 class="uk-margin-remove uk-text-bold padding-vertical-10">Nombre</h5>
-                    <input class="input-add-card-responsive-customers" type="text" placeholder="Nombre en la tarjeta">
-                </div>
-            </div>
-            <div style="margin-top: 30px;">
-                <h5 class="uk-margin-remove uk-text-bold padding-vertical-10">Número de tarjeta</h5>
-                <input class="input-add-card-responsive-customers uk-text-center" type="text" placeholder="-">
-            </div>
-            <div style="margin-top: 30px;">
-                <h5 class="uk-margin-remove uk-text-bold padding-vertical-10">Caduca el:</h5>
-                <input class="input-add-card-responsive-customers uk-text-center" type="text" placeholder="MM/AAAA">
-            </div>
-            <div style="margin-top: 30px;">
-                <h5 class="uk-margin-remove uk-text-bold">Tipo:</h5>
-                <div class="uk-flex uk-flex-middle uk-flex-between" style="margin-top: 10px;">
-                    <div class="uk-flex uk-flex-around uk-flex-middle box-input-add-card-responsive-customers">
-                        <div>
-                            <h6 class="uk-margin-remove color-grey">CC</h6>
-                        </div>
-                        <div>
-                            <i class="fas fa-caret-down color-grey"></i>
-                        </div>
+                <div style="margin-top: 30px;">
+                    <div class="uk-flex uk-flex-middle">
+                        <h4 class="uk-margin-remove uk-text-bold padding-vertical-10">Número de tarjeta</h4>
+                        <img src="./data/tarjeta.png" style="width: 50px; margin-left: 40px;" alt="">
                     </div>
-                    <div>
-                        <input class="input-add-card-responsive-customers" style="width: 210px;" type="text" placeholder="Número de documento">
+                    <input class="input-add-card-responsive-customers uk-text-center" style="width: 180px; margin-top: 10px;" type="text" placeholder="XXXX XXXX XXXX XXXX">
+                </div>
+                <div style="margin-top: 30px;">
+                    <h4 class="uk-margin-remove uk-text-bold padding-vertical-10">Titular</h4>
+                    <div class="uk-flex uk-flex-middle">
+                        <div>
+                            <h5 class="uk-margin-remove">Nombre</h5>
+                            <input class="input-add-card-responsive-customers" type="text">
+                        </div>
+                        <div style="margin-left: 20px;">
+                            <h5 class="uk-margin-remove">Apellido</h5>
+                            <input class="input-add-card-responsive-customers" type="text">
+                        </div>
                     </div>
                 </div>
             </div>
             <div style="margin-top: 30px;">
-                <h5 class="uk-margin-remove uk-text-bold padding-vertical-10">CVC</h5>
-                <input class="input-add-card-responsive-customers uk-text-center" type="text" placeholder="CVV">
+                <h4 class="uk-margin-remove uk-text-bold padding-vertical-10">Fecha de expiración</h4>
+                <input class="input-add-card-responsive-customers uk-text-center" type="text" placeholder="XX/XX">
             </div>
-            <div class="uk-flex uk-flex-center uk-flex-around">
-                <button class="button-save-card-responsive-customers uk-box-shadow-medium" style="background-color: rgb(211, 211, 211); font-weight: 500;">Cancelar</button>
-                <button class="button-save-card-responsive-customers uk-box-shadow-medium">Guardar</button>
+            <div style="margin-top: 30px;">
+                <h4 class="uk-margin-remove uk-text-bold padding-vertical-10">CVC</h4>
+                <input class="input-add-card-responsive-customers uk-text-center" type="text" placeholder="XXX">
+            </div>
+            <div style="margin-top: 50px;">
+                <button class="button-change-complete-order-respomsive-customers" style="font-size: 18px; padding-left: 15px; padding-right: 15px;">Ingresar</button>
             </div>
         </div>
     </div>
